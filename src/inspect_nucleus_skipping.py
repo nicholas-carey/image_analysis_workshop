@@ -1,8 +1,9 @@
 """Print a spaced 10 x 10 pixel sample, then display the full image in napari.
 
-Run from the workshop folder: uv run src/inspect_nucleus_skipping.py
+Run from the workshop folder: uv run src/inspect_nucleus_skipping.py [input.tif]
 """
 
+import argparse
 from pathlib import Path
 
 import numpy as np
@@ -10,11 +11,20 @@ import tifffile
 
 
 def main():
-    image_path = (
-        Path(__file__).resolve().parent.parent
-        / "testImages"
-        / "nucleus_cropped_1.tif"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "image",
+        nargs="?",
+        type=Path,
+        default=(Path(__file__).resolve().parent.parent
+                 / "testImages" / "nucleus_cropped_1.tif"),
+        help="Input TIFF path (default: the workshop's nucleus_cropped_1.tif).",
     )
+    args = parser.parse_args()
+    # Supplied relative paths are relative to the folder you run the command in.
+    image_path = args.image.expanduser()
+    if not image_path.is_file():
+        parser.error(f"Input file not found: {image_path}")
     pixels = tifffile.imread(image_path)
     if pixels.ndim != 2:
         raise ValueError(f"Expected a 2D image; found shape {pixels.shape}.")
