@@ -1,7 +1,7 @@
 """Print RGB values for about 3% of pixels and display the color image.
 
-Run: uv run src/inspect_cell_rgb.py
-Optional input: uv run src/inspect_cell_rgb.py testImages/Cell_cropped_2.tif
+Run: uv run src/Codex_scripts/inspect_cell_rgb.py
+Optional input: uv run src/Codex_scripts/inspect_cell_rgb.py testImages/Cell_cropped_2.tif
 Close napari to end the script.
 """
 
@@ -16,7 +16,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "image", nargs="?", type=Path,
-        default=Path(__file__).resolve().parent.parent / "testImages" / "Cell_cropped_2.tif",
+        default=Path(__file__).resolve().parents[2] / "testImages" / "Cell_cropped_2.tif",
         help="Path to an RGB TIFF image.",
     )
     image_path = parser.parse_args().image.expanduser()
