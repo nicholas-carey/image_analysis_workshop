@@ -1,0 +1,27 @@
+{
+  "original": "/Users/ncarey/Library/CloudStorage/OneDrive-UCSF/CALM_Bioimage_Workshop/projects/image_analysis_workshop/testImages/Mito_Cropped.tif",
+  "shifted": "/Users/ncarey/Library/CloudStorage/OneDrive-UCSF/CALM_Bioimage_Workshop/projects/image_analysis_workshop/testImages/Mito_Cropped_shifted.tif",
+  "convention": "(dy, dx); positive means down, right",
+  "applied_shift_pixels": [
+    8,
+    6
+  ],
+  "estimated_shift_pixels": [
+    8,
+    6
+  ],
+  "alignment_correction_pixels": [
+    -8,
+    -6
+  ],
+  "correlation_zero_lag_row_column": [
+    283,
+    287
+  ],
+  "estimated_displacement_physical_y_x": [
+    2.5904001067244846,
+    1.9428000800433636
+  ],
+  "spatial_unit": "micron",
+  "method": "Full linear cross-correlation after subtracting each image mean"
+}
