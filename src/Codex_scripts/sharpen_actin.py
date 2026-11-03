@@ -1,8 +1,8 @@
 """Sharpen a 2D grayscale TIFF and compare it with the original in napari.
 
 Run from the project folder:
-    uv run src/sharpen_actin.py
-    uv run src/sharpen_actin.py testImages/Actin_cropped.tif
+    uv run src/Codex_scripts/sharpen_actin.py
+    uv run src/Codex_scripts/sharpen_actin.py testImages/Actin_cropped.tif
 
 Keep median_filters.py beside this script; it supplies the metadata reader.
 """
@@ -35,7 +35,7 @@ def sharpen(image):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Actin_cropped.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Actin_cropped.tif")
     parser.add_argument("--no-view", action="store_true", help="Save without opening napari")
     args = parser.parse_args()
 

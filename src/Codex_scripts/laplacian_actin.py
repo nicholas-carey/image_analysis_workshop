@@ -1,8 +1,8 @@
 """Compare an eight-neighbor Laplacian with Gaussian unsharp detail masks.
 
 Run from the project folder:
-    uv run src/laplacian_actin.py
-    uv run src/laplacian_actin.py --sigma-5 1 --sigma-21 5
+    uv run src/Codex_scripts/laplacian_actin.py
+    uv run src/Codex_scripts/laplacian_actin.py --sigma-5 1 --sigma-21 5
 
 Keep median_filters.py and gaussian_unsharp_masks.py beside this script.
 Here, unsharp masks mean original minus blur, before adding detail back.
@@ -42,7 +42,7 @@ def compare_filters(original, sigma_5=1.0, sigma_21=5.0):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Actin_cropped.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Actin_cropped.tif")
     parser.add_argument("--sigma-5", type=positive_sigma, default=1.0,
                         help="5x5 Gaussian sigma in pixels (default: 1)")
     parser.add_argument("--sigma-21", type=positive_sigma, default=5.0,

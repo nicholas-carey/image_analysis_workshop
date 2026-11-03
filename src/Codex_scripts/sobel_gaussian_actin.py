@@ -1,8 +1,8 @@
 """Compare Sobel gradients with and without a 5x5 Gaussian pre-blur.
 
 Run from the project folder:
-    uv run src/sobel_gaussian_actin.py
-    uv run src/sobel_gaussian_actin.py --sigma 1.0
+    uv run src/Codex_scripts/sobel_gaussian_actin.py
+    uv run src/Codex_scripts/sobel_gaussian_actin.py --sigma 1.0
 
 Keep sobel_actin.py and median_filters.py beside this script. All outputs are
 saved beside the input TIFF with its spatial calibration. --no-view skips GUI.
@@ -48,7 +48,7 @@ def compare_gradients(original, sigma=1.0):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Actin_cropped.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Actin_cropped.tif")
     parser.add_argument("--sigma", type=positive_sigma, default=1.0,
                         help="Gaussian sigma in pixels (default: 1; kernel stays 5x5)")
     parser.add_argument("--no-view", action="store_true", help="Save without opening napari")

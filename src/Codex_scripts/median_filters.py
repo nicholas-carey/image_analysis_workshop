@@ -1,7 +1,7 @@
 """Compare three median filters on a 2D grayscale TIFF.
 
 Run from the project folder:
-    uv run src/median_filters.py testImages/Nucleus_cropped_noise.tif
+    uv run src/Codex_scripts/median_filters.py testImages/Nucleus_cropped_noise.tif
 Use --no-view to save the results without opening napari.
 """
 
@@ -70,7 +70,7 @@ def read_image(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Nucleus_cropped_noise.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Nucleus_cropped_noise.tif")
     parser.add_argument("--output-dir", type=Path, help="Default: same folder as the input")
     parser.add_argument("--no-view", action="store_true", help="Save images without opening napari")
     args = parser.parse_args()

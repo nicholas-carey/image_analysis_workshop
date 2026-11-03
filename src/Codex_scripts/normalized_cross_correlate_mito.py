@@ -1,8 +1,8 @@
 """Find mitochondrial template matches with normalized cross-correlation.
 
 Run from the project folder:
-    uv run src/normalized_cross_correlate_mito.py
-    uv run src/normalized_cross_correlate_mito.py --threshold 0.8 --min-distance 4
+    uv run src/Codex_scripts/normalized_cross_correlate_mito.py
+    uv run src/Codex_scripts/normalized_cross_correlate_mito.py --threshold 0.8 --min-distance 4
 
 Keep median_filters.py beside this script. --no-view saves without napari.
 The score TIFF uses template top-left coordinates. The CSV includes those
@@ -51,7 +51,7 @@ def normalized_matches(image, template, threshold=0.8, min_distance=4):
 
 
 def main():
-    repo = Path(__file__).resolve().parents[1]
+    repo = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
                         default=repo / "testImages/Mito_Cropped.tif")

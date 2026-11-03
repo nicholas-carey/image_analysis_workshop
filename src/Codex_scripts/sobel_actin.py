@@ -1,8 +1,8 @@
 """Apply Sobel X/Y kernels and display their gradient magnitude in napari.
 
 Run from the project folder:
-    uv run src/sobel_actin.py
-    uv run src/sobel_actin.py testImages/Actin_cropped.tif
+    uv run src/Codex_scripts/sobel_actin.py
+    uv run src/Codex_scripts/sobel_actin.py testImages/Actin_cropped.tif
 
 Use --no-view to save without opening napari. Keep median_filters.py beside
 this script; it supplies the TIFF reader that preserves pixel-size metadata.
@@ -47,7 +47,7 @@ def sobel_images(image):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Actin_cropped.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Actin_cropped.tif")
     parser.add_argument("--no-view", action="store_true", help="Save without opening napari")
     args = parser.parse_args()
 

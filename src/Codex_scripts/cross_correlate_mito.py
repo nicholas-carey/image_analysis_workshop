@@ -1,8 +1,8 @@
 """Locate the highest raw cross-correlation between a TIFF and a template.
 
 Run from the project folder:
-    uv run src/cross_correlate_mito.py
-    uv run src/cross_correlate_mito.py testImages/Mito_Cropped.tif testImages/Mito_template.tif
+    uv run src/Codex_scripts/cross_correlate_mito.py
+    uv run src/Codex_scripts/cross_correlate_mito.py testImages/Mito_Cropped.tif testImages/Mito_template.tif
 
 Keep median_filters.py beside this script for its calibrated TIFF reader.
 Only placements where the entire template fits inside the image are evaluated.
@@ -36,7 +36,7 @@ def cross_correlation(image, template):
 
 
 def main():
-    repo = Path(__file__).resolve().parents[1]
+    repo = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
                         default=repo / "testImages/Mito_Cropped.tif")

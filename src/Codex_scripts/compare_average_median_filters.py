@@ -1,8 +1,8 @@
 """Compare normalized averaging kernels and median filters on a grayscale TIFF.
 
 Run from the project folder:
-    uv run src/compare_average_median_filters.py
-    uv run src/compare_average_median_filters.py testImages/Nucleus_cropped_noise.tif
+    uv run src/Codex_scripts/compare_average_median_filters.py
+    uv run src/Codex_scripts/compare_average_median_filters.py testImages/Nucleus_cropped_noise.tif
 
 All six filtered images are saved beside the input (or in --output-dir).
 Use --no-view to save without launching napari. Keep median_filters.py beside
@@ -50,7 +50,7 @@ def filter_images(image):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "testImages/Nucleus_cropped_noise.tif")
+                        default=Path(__file__).resolve().parents[2] / "testImages/Nucleus_cropped_noise.tif")
     parser.add_argument("--output-dir", type=Path, help="Default: input image folder")
     parser.add_argument("--no-view", action="store_true", help="Save without opening napari")
     args = parser.parse_args()

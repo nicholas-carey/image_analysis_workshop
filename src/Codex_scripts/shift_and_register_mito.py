@@ -1,11 +1,11 @@
 """Create a randomly shifted TIFF, then recover its movement by cross-correlation.
 
 Run from the project folder:
-    uv run src/shift_and_register_mito.py
-    uv run src/shift_and_register_mito.py --seed 42
+    uv run src/Codex_scripts/shift_and_register_mito.py
+    uv run src/Codex_scripts/shift_and_register_mito.py --seed 42
 
 To estimate movement from an existing shifted TIFF without creating a new one:
-    uv run src/shift_and_register_mito.py --shifted testImages/Mito_Cropped_shifted.tif
+    uv run src/Codex_scripts/shift_and_register_mito.py --shifted testImages/Mito_Cropped_shifted.tif
 
 Keep median_filters.py beside this script for the calibrated TIFF reader.
 """
@@ -63,7 +63,7 @@ def estimate_shift(original, shifted):
 
 
 def main():
-    repo = Path(__file__).resolve().parents[1]
+    repo = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", nargs="?", type=Path,
                         default=repo / "testImages/Mito_Cropped.tif")
