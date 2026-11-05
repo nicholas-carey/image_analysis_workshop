@@ -2,7 +2,7 @@
 
 Run from the workshop folder:
     uv run src/sawtooth_wave_demo.py
-    uv run src/sawtooth_wave_demo.py --waves 10 --output-dir ~/fourier_demo_output
+    uv run src/sawtooth_wave_demo.py --waves 10 --output-dir ./fourier_demo_output
 
 Writes sawtooth_wave_build.gif and a PNG showing the final sum.
 """
@@ -95,8 +95,8 @@ def main():
     parser.add_argument("--waves", type=int, default=50,
                         help="Number of sine waves to add (default: 50).")
     parser.add_argument("--output-dir", type=Path,
-                        default=Path.home() / "fourier_demo_output",
-                        help="Output folder (default: ~/fourier_demo_output).")
+                        default=Path("./fourier_demo_output"),
+                        help="Output folder (default: ./fourier_demo_output).")
     args = parser.parse_args()
     if args.waves < 1:
         parser.error("--waves must be at least 1")
