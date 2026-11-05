@@ -4,7 +4,11 @@ Run it from the top folder of the workshop repository with:
 
     uv run src/fourier_series_demo.py
 
-The animations (and one still picture of each) are saved in Pictures/fourier/:
+For a local output folder outside OneDrive, use:
+
+    uv run src/fourier_series_demo.py --output-dir ~/fourier_demo_output
+
+By default, animations (and one still picture of each) go in Pictures/fourier/:
 
     circle_to_wave.gif     a point going around a circle draws a sine wave;
                            the radius is the amplitude, the starting angle the phase
@@ -14,6 +18,7 @@ The animations (and one still picture of each) are saved in Pictures/fourier/:
     phase_shift.gif        moving the square wave in time only changes the phases
 """
 
+import argparse
 from pathlib import Path
 
 import matplotlib
@@ -176,7 +181,7 @@ def circle_to_wave():
 
 # --- 2. Adding sine waves one by one ------------------------------------------
 
-def square_wave_build(n_waves=10):
+def square_wave_build(n_waves=50):
     freqs, amps, phases = square_wave_recipe(n_waves)
     target = square_wave(TIME)
     fig = plt.figure(figsize=(12, 6.5))
@@ -332,6 +337,15 @@ def phase_shift(n_waves=8):
 
 
 def main():
+    global OUT_DIR
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output-dir", type=Path, default=OUT_DIR,
+        help="Output folder; use a local folder outside OneDrive if saving times out.",
+    )
+    args = parser.parse_args()
+    OUT_DIR = args.output_dir.expanduser().resolve()
+    print(f"Saving animations to {OUT_DIR}", flush=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     circle_to_wave()
     square_wave_build()
