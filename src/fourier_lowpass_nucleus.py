@@ -4,12 +4,13 @@ Run it from the top folder of the workshop repository with:
 
     uv run src/fourier_lowpass_nucleus.py
 
-The script calculates the Fourier image of Nucleus_cropped_noise.tif, makes
-everything outside a circle in the center black (0), and transforms back.
+The script calculates the Fourier image of Nucleus_cropped_noise.tif,
+multiplies it by a Gaussian mask (brightest at the center, fading smoothly
+outward), and transforms back.
 Two images are saved next to the original in testImages/:
 
-    Nucleus_cropped_noise_fourier_circle.tif  the Fourier image (amplitudes, log)
-                                              after blacking out outside the circle
+    Nucleus_cropped_noise_fourier_gaussian.tif  the filtered Fourier image
+                                                (amplitudes, log)
     Nucleus_cropped_noise_lowpass.tif         the image transformed back
 """
 
@@ -21,16 +22,18 @@ import tifffile
 REPO = Path(__file__).resolve().parent.parent
 INPUT = REPO / "testImages" / "Nucleus_cropped_noise.tif"
 
-# The diameter of the circle, as a fraction of the image size (0.1 = 10%).
-# Try other values: a smaller circle removes more noise, but blurs more.
-DIAMETER_FRACTION = 0.1
+# Gaussian width (sigma) as a fraction of the shorter image side.
+# A smaller sigma suppresses more high frequencies, but blurs more.
+# 0.2 uses the old circle radius as sigma; the filters are not equivalent.
+SIGMA_FRACTION = 0.2
 
 with tifffile.TiffFile(INPUT) as tif:
     image = tif.asarray().astype(float)
     # Keep the pixel size, so the filtered image has the same size in microns.
     page = tif.pages[0]
     resolution = (page.tags["XResolution"].value, page.tags["YResolution"].value)
-    unit = tif.imagej_metadata.get("unit", "micron")
+    unit = (tif.imagej_metadata or {}).get("unit", "micron")
+    resolution_unit = page.tags["ResolutionUnit"].value
 
 rows, cols = image.shape
 print(f"Read {INPUT.name}: {rows} x {cols} pixels")
@@ -40,18 +43,19 @@ print(f"Read {INPUT.name}: {rows} x {cols} pixels")
 # (fine details and noise) further out.
 fourier = np.fft.fftshift(np.fft.fft2(image))
 
-# Make the circle: for every pixel of the Fourier image, calculate its distance
-# to the center, and keep it if that distance is less than the radius.
-# The image is not exactly square, so use the smaller side for the size.
-radius = DIAMETER_FRACTION * min(rows, cols) / 2
+# Make a 2D bell curve centered on the zero frequency. Its peak is 1,
+# preserving the average brightness; weights fade toward 0 further out.
+# Sigma is measured in Fourier-image pixels, not microns.
+if not np.isfinite(SIGMA_FRACTION) or SIGMA_FRACTION <= 0:
+    raise ValueError("SIGMA_FRACTION must be a positive, finite number.")
+sigma = SIGMA_FRACTION * min(rows, cols)
 row_distance, col_distance = np.ogrid[:rows, :cols]
-distance = np.hypot(row_distance - rows // 2, col_distance - cols // 2)
-inside = distance <= radius
-print(f"Circle with a diameter of {2 * radius:.1f} pixels: keeps {inside.sum()} of "
-      f"{inside.size} waves ({100 * inside.mean():.2f}%)")
+distance_squared = (row_distance - rows // 2)**2 + (col_distance - cols // 2)**2
+mask = np.exp(-distance_squared / (2 * sigma**2))
+print(f"Gaussian mask with sigma = {sigma:.1f} Fourier-image pixels")
 
-# Black out everything outside the circle: set those waves to 0.
-filtered_fourier = np.where(inside, fourier, 0)
+# Multiply the full complex Fourier values by the smoothly varying weights.
+filtered_fourier = fourier * mask
 
 # Transform back.  ifftshift undoes the fftshift from above.  The result has
 # tiny imaginary parts left over from rounding; "real" drops them.
@@ -63,7 +67,7 @@ print(f"Pixel values: original {image.min():.0f} - {image.max():.0f}, "
 # the very bright center is visible).  Pixels in Fourier space are frequencies,
 # not distances, so the pixel size of the image does not apply to this one.
 fourier_view = np.log1p(np.abs(filtered_fourier))
-output = INPUT.with_name(f"{INPUT.stem}_fourier_circle.tif")
+output = INPUT.with_name(f"{INPUT.stem}_fourier_gaussian.tif")
 tifffile.imwrite(output, fourier_view.astype(np.float32), imagej=True)
 print(f"Saved {output.name}")
 
@@ -71,5 +75,6 @@ print(f"Saved {output.name}")
 # slightly negative near sharp edges.
 output = INPUT.with_name(f"{INPUT.stem}_lowpass.tif")
 tifffile.imwrite(output, filtered.astype(np.float32), imagej=True,
-                 resolution=resolution, metadata={"unit": unit})
+                 resolution=resolution, resolutionunit=resolution_unit,
+                 metadata={"unit": unit})
 print(f"Saved {output.name}")

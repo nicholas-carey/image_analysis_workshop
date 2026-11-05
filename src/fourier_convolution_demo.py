@@ -4,8 +4,9 @@ Run it from the top folder of the workshop repository with:
 
     uv run src/fourier_convolution_demo.py
 
-The noisy nucleus image is smoothed with the 3 x 3 "Smooth" kernel (all ones,
-divided by 9) in two ways: by convolution, and by multiplying the Fourier
+The noisy nucleus image is sharpened with the 3 x 3 Sharpen kernel from
+Session 3, normalized by its sum (4), in two ways: by convolution, and by
+multiplying the Fourier
 images and transforming back.  The script prints how much the two results
 differ, and saves a picture in Pictures/fourier2d/convolution_theorem.png.
 """
@@ -24,7 +25,11 @@ REPO = Path(__file__).resolve().parent.parent
 INPUT = REPO / "testImages" / "Nucleus_cropped_noise.tif"
 OUTPUT = REPO / "Pictures" / "fourier2d" / "convolution_theorem.png"
 
-KERNEL = np.ones((3, 3)) / 9  # the Smooth kernel from Session 3
+# Session 3 Sharpen kernel: emphasize the center relative to its neighbors.
+KERNEL = np.array([[-1, -1, -1],
+                   [-1, 12, -1],
+                   [-1, -1, -1]], dtype=float)
+KERNEL /= KERNEL.sum()  # divide by 4 so constant regions keep their brightness
 
 
 def fourier(image):
@@ -49,26 +54,28 @@ kernel_image = kernel_as_image(KERNEL, image.shape)
 
 # Way 1: convolution in real space.  mode="wrap" treats the image as repeating
 # like tiles, which is what the Fourier transform does too (see the README).
-smoothed = ndimage.convolve(image, KERNEL, mode="wrap")
+sharpened = ndimage.convolve(image, KERNEL, mode="wrap")
 
 # Way 2: multiply the Fourier images, pixel by pixel, and transform back.
 image_f = np.fft.fft2(image)
 kernel_f = np.fft.fft2(kernel_image)
-smoothed_via_fourier = np.real(np.fft.ifft2(image_f * kernel_f))
+sharpened_via_fourier = np.real(np.fft.ifft2(image_f * kernel_f))
 
-difference = np.abs(smoothed - smoothed_via_fourier).max()
-print(f"Pixel values of the smoothed image: {smoothed.min():.0f} - {smoothed.max():.0f}")
+difference = np.abs(sharpened - sharpened_via_fourier).max()
+print(f"Pixel values of the sharpened image: {sharpened.min():.0f} - {sharpened.max():.0f}")
 print(f"Largest difference between the two ways: {difference:.2g}")
 
 # --- The picture --------------------------------------------------------------
 
 image_amp = np.log1p(np.abs(fourier(image)))
-smoothed_amp = np.log1p(np.abs(fourier(smoothed)))
-kernel_amp = np.abs(fourier(kernel_image))  # between 0 and 1: no log needed
+sharpened_amp = np.log1p(np.abs(fourier(sharpened)))
+kernel_amp = np.abs(fourier(kernel_image))  # linear amplitudes show amplification above 1
 # Same brightness scale for both images, and for both Fourier images, so that
 # you can compare them directly.
-img_range = dict(vmin=image.min(), vmax=image.max())
-amp_range = dict(vmin=smoothed_amp.min(), vmax=image_amp.max())
+img_range = dict(vmin=min(image.min(), sharpened.min()),
+                 vmax=max(image.max(), sharpened.max()))
+amp_range = dict(vmin=min(image_amp.min(), sharpened_amp.min()),
+                 vmax=max(image_amp.max(), sharpened_amp.max()))
 
 # Show the kernel enlarged: a small area around the center of the kernel image.
 zoom = 5
@@ -80,12 +87,12 @@ kernel_zoom = kernel_zoom[center_row - zoom:center_row + zoom + 1,
 fig, axes = plt.subplots(2, 3, figsize=(13, 9))
 panels = [
     (axes[0, 0], image, "noisy image", img_range),
-    (axes[0, 1], kernel_zoom, "3 x 3 Smooth kernel (enlarged)", {}),
-    (axes[0, 2], smoothed, "smoothed image", img_range),
+    (axes[0, 1], kernel_zoom, "3 x 3 Sharpen kernel (normalized, enlarged)", {}),
+    (axes[0, 2], sharpened, "sharpened image", img_range),
     (axes[1, 0], image_amp, "Fourier image (amplitudes, log)", amp_range),
     (axes[1, 1], kernel_amp, "Fourier image of the kernel\n(amplitudes, not log)",
-     dict(vmin=0, vmax=1)),
-    (axes[1, 2], smoothed_amp, "Fourier image (amplitudes, log)", amp_range),
+     dict(vmin=0, vmax=kernel_amp.max())),
+    (axes[1, 2], sharpened_amp, "Fourier image (amplitudes, log)", amp_range),
 ]
 for ax, data, title, brightness in panels:
     ax.imshow(data, cmap="gray", interpolation="nearest", **brightness)
