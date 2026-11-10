@@ -5,3 +5,6 @@ uv.lock
 
 #Editor files
 *.swp
+
+# macOS Finder files (in every folder)
+.DS_Store
