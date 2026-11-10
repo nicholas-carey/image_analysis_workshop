@@ -5,6 +5,9 @@ Steps:
   2. Otsu threshold -> binary image.
   3. N rounds of erosion, then N rounds of dilation ("opening"; default N = 3).
   4. Label: every connected object gets its own number (1, 2, 3, ...; 0 = background).
+     With --exclude-border, objects touching the image edge are removed
+     (they are cut off, so their size and shape would be wrong) and the
+     remaining objects are renumbered 1, 2, 3, ... without gaps.
   5. Save the label image as a TIFF with a LUT (lookup table, "palette") that gives
      every number its own distinct color, and with the original pixel size.
   6. Open the saved file in napari (with the napari-tiff reader) next to the
@@ -13,6 +16,8 @@ Steps:
 
 Run (from the workshop folder):
     uv run src/otsu_open_label_save.py testImages/3Channel_FF_Corrected_1/3Channel_FF_Corrected_1_MMStack_Pos0.ome.tif
+
+    Add --exclude-border to drop objects that touch the image edge.
 
 Why a plain .tif and not .ome.tif? napari-tiff only shows a TIFF's color LUT
 when it is stored as a standard TIFF palette; in an OME-TIFF it is ignored.
@@ -28,6 +33,7 @@ from matplotlib.colors import hsv_to_rgb
 from skimage.filters import threshold_otsu
 from skimage.measure import label
 from skimage.morphology import dilation, erosion
+from skimage.segmentation import clear_border, relabel_sequential
 
 # The structuring element ("footprint"): a 3x3 plus sign, scikit-image's default.
 FOOTPRINT = np.array([[0, 1, 0],
@@ -78,13 +84,16 @@ def main():
     parser.add_argument("image", type=Path, help="Input OME-TIFF image.")
     parser.add_argument("--rounds", type=int, default=3,
                         help="Rounds of erosion, then the same number of dilations (default 3).")
+    parser.add_argument("--exclude-border", action="store_true",
+                        help="Remove objects that touch the edge of the image.")
     parser.add_argument("--output", type=Path, help="Output TIFF path.")
     args = parser.parse_args()
     if not args.image.is_file():
         parser.error(f"Input file not found: {args.image}")
     name = args.image.name.removesuffix(".ome.tif").removesuffix(".tif")
+    border = "_noborder" if args.exclude_border else ""
     output = args.output or args.image.with_name(
-        f"{name}_DAPI_otsu_open{args.rounds}_labels.tif")
+        f"{name}_DAPI_otsu_open{args.rounds}{border}_labels.tif")
 
     dapi, pixel_size_um = read_dapi(args.image)
 
@@ -98,6 +107,14 @@ def main():
 
     # --- Label: each connected object gets its own number --------------------
     labels = label(binary)
+    n_all = int(labels.max())
+
+    if args.exclude_border:
+        # clear_border sets every object that touches the image edge to 0.
+        # That leaves gaps in the numbering (e.g. 1, 2, 5, 7, ...), so
+        # relabel_sequential renumbers the remaining objects 1, 2, 3, ...
+        labels = clear_border(labels)
+        labels, _, _ = relabel_sequential(labels)
     n_objects = int(labels.max())
 
     # A LUT needs one color per possible pixel value: 256 for 8-bit images,
@@ -119,6 +136,9 @@ def main():
 
     print(f"Otsu threshold: {threshold:g}; {args.rounds} erosions + "
           f"{args.rounds} dilations (plus-sign footprint)", flush=True)
+    if args.exclude_border:
+        print(f"Objects found: {n_all}; touching the border (removed): "
+              f"{n_all - n_objects}", flush=True)
     print(f"Objects labeled: {n_objects} (numbers 1-{n_objects}; 0 = background)", flush=True)
     print(f"Saved ({np.dtype(dtype).name}, color LUT, pixel size "
           f"{pixel_size_um[1]:g} x {pixel_size_um[0]:g} µm): {output}", flush=True)
