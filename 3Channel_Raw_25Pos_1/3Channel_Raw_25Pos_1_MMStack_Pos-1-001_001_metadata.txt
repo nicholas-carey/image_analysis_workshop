@@ -1,0 +1,2783 @@
+{
+"Summary": {
+  "Prefix": "3Channel_Raw_25Pos_1",
+  "UserName": "nico",
+  "ProfileName": "Default User",
+  "MicroManagerVersion": "2.0.3 20260826",
+  "MetadataVersion": "13.0.0",
+  "ComputerName": "NIC-Analysis3",
+  "Directory": "Z:\\ImageAnalysisCourse\\TimeLapse-BPAE",
+  "ChannelGroup": "Channel",
+  "ChNames": [
+    "Cy3",
+    "FITC",
+    "DAPI"
+  ],
+  "z-step_um": 0.0,
+  "Interval_ms": 0.0,
+  "CustomIntervals_ms": [],
+  "AxisOrder": [
+    "channel",
+    "z",
+    "position",
+    "time"
+  ],
+  "TimeFirst": true,
+  "SlicesFirst": true,
+  "IntendedDimensions": {
+    "time": 1,
+    "position": 25,
+    "z": 1,
+    "channel": 3
+  },
+  "Frames": 1,
+  "Positions": 25,
+  "Slices": 1,
+  "Channels": 3,
+  "StartTime": "2026-10-16 09:38:51.304 -0700",
+  "StagePositions": [
+    {
+      "Label": "Pos-1-000_000",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 0,
+      "GridCol": 0,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1324.4614778182902,
+            2226.865960199274
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-001_000",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 0,
+      "GridCol": 1,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            660.9136125099128,
+            2225.3645818866635
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-002_000",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 0,
+      "GridCol": 2,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -2.6342527984644137,
+            2223.863203574053
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-003_000",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 0,
+      "GridCol": 3,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -666.1821181068417,
+            2222.3618252614424
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-004_000",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 0,
+      "GridCol": 4,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1329.7299834152188,
+            2220.860446948832
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-004_001",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 1,
+      "GridCol": 4,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1328.4628570167317,
+            1557.9288518524268
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-003_001",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 1,
+      "GridCol": 3,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -664.9149917083545,
+            1559.4302301650373
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-002_001",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 1,
+      "GridCol": 2,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1.367126399977265,
+            1560.9316084776478
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-001_001",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 1,
+      "GridCol": 1,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            662.1807389084,
+            1562.4329867902584
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-000_001",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 1,
+      "GridCol": 0,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1325.7286042167773,
+            1563.934365102869
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-000_002",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 2,
+      "GridCol": 0,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1326.9957306152644,
+            901.002770006464
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-001_002",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 2,
+      "GridCol": 1,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            663.4478653068871,
+            899.5013916938533
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-002_002",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 2,
+      "GridCol": 2,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -0.10000000149011612,
+            898.0000133812428
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-003_002",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 2,
+      "GridCol": 3,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -663.6478653098674,
+            896.4986350686322
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-004_002",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 2,
+      "GridCol": 4,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1327.1957306182446,
+            894.9972567560216
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-004_003",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 3,
+      "GridCol": 4,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1325.9286042197575,
+            232.06566165961647
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-003_003",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 3,
+      "GridCol": 3,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -662.3807389113803,
+            233.56703997222712
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-002_003",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 3,
+      "GridCol": 2,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1.1671263969970327,
+            235.06841828483766
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-001_003",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 3,
+      "GridCol": 1,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            664.7149917053742,
+            236.5697965974482
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-000_003",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 3,
+      "GridCol": 0,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1328.2628570137515,
+            238.07117491005886
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-000_004",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 4,
+      "GridCol": 0,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            1329.5299834122386,
+            -424.86042018634623
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-001_004",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 4,
+      "GridCol": 1,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            665.9821181038615,
+            -426.3617984989569
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-002_004",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 4,
+      "GridCol": 2,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            2.4342527954841815,
+            -427.8631768115674
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-003_004",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 4,
+      "GridCol": 3,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -661.113612512893,
+            -429.36455512417797
+          ]
+        }
+      ]
+    },
+    {
+      "Label": "Pos-1-004_004",
+      "DefaultXYStage": "TIXYDrive",
+      "DefaultZStage": "",
+      "GridRow": 4,
+      "GridCol": 4,
+      "Properties": {
+        "OverlapPixels": {
+          "type": "STRING",
+          "scalar": "0"
+        },
+        "OverlapUm": {
+          "type": "STRING",
+          "scalar": "0.0000"
+        },
+        "Source": {
+          "type": "STRING",
+          "scalar": "TileCreator"
+        }
+      },
+      "DevicePositions": [
+        {
+          "Device": "TIXYDrive",
+          "Position_um": [
+            -1324.6614778212704,
+            -430.8659334367886
+          ]
+        }
+      ]
+    }
+  ],
+  "KeepShutterOpenSlices": false,
+  "KeepShutterOpenChannels": false,
+  "MdaSettings": "{\n  \"numFrames\": 0,\n  \"intervalMs\": 0.0,\n  \"displayTimeUnit\": 0,\n  \"useCustomIntervals\": false,\n  \"channels\": [\n    {\n      \"channelGroup\": \"Channel\",\n      \"config\": \"Cy3\",\n      \"exposure\": 300.0,\n      \"zOffset\": 0.0,\n      \"doZStack\": true,\n      \"color\": {\n        \"value\": -52429,\n        \"falpha\": 0.0\n      },\n      \"skipFactorFrame\": 0,\n      \"useChannel\": true,\n      \"camera\": \"\"\n    },\n    {\n      \"channelGroup\": \"Channel\",\n      \"config\": \"FITC\",\n      \"exposure\": 300.0,\n      \"zOffset\": 0.0,\n      \"doZStack\": true,\n      \"color\": {\n        \"value\": -16711936,\n        \"falpha\": 0.0\n      },\n      \"skipFactorFrame\": 0,\n      \"useChannel\": true,\n      \"camera\": \"\"\n    },\n    {\n      \"channelGroup\": \"Channel\",\n      \"config\": \"DAPI\",\n      \"exposure\": 99.99663157894736,\n      \"zOffset\": 0.0,\n      \"doZStack\": true,\n      \"color\": {\n        \"value\": -1,\n        \"frgbvalue\": [\n          1.0,\n          1.0,\n          1.0\n        ],\n        \"fvalue\": [\n          1.0,\n          1.0,\n          1.0\n        ],\n        \"falpha\": 1.0\n      },\n      \"skipFactorFrame\": 0,\n      \"useChannel\": true,\n      \"camera\": \"\"\n    }\n  ],\n  \"slices\": [],\n  \"relativeZSlice\": true,\n  \"slicesFirst\": false,\n  \"timeFirst\": false,\n  \"keepShutterOpenSlices\": false,\n  \"keepShutterOpenChannels\": false,\n  \"useAutofocus\": false,\n  \"skipAutofocusCount\": 0,\n  \"save\": true,\n  \"saveMode\": \"MULTIPAGE_TIFF\",\n  \"root\": \"Z:\\\\ImageAnalysisCourse\\\\TimeLapse-BPAE\",\n  \"prefix\": \"3Channel_Raw_25Pos\",\n  \"zReference\": 4266.000063568354,\n  \"comment\": \"\",\n  \"channelGroup\": \"Channel\",\n  \"usePositionList\": true,\n  \"cameraTimeout\": 20000,\n  \"shouldDisplayImages\": true,\n  \"useSlices\": false,\n  \"useFrames\": false,\n  \"useChannels\": true,\n  \"sliceZStepUm\": 1.0,\n  \"sliceZBottomUm\": 0.0,\n  \"sliceZTopUm\": 0.0,\n  \"acqOrderMode\": 0,\n  \"isTestAcquisition\": false,\n  \"version\": 1.4\n}",
+  "PixelType": "GRAY16",
+  "Width": 2048,
+  "Height": 2048,
+  "UserData": {
+    "CameraTimeout": {
+      "type": "STRING",
+      "scalar": "20000"
+    },
+    "Depth": {
+      "type": "STRING",
+      "scalar": "2"
+    },
+    "GridColumn": {
+      "type": "STRING",
+      "scalar": "0"
+    }
+  },
+  "InitialScopeData": {
+    "COM4-AnswerTimeout": {
+      "type": "STRING",
+      "scalar": "500.0000"
+    },
+    "COM4-BaudRate": {
+      "type": "STRING",
+      "scalar": "128000"
+    },
+    "COM4-DTR": {
+      "type": "STRING",
+      "scalar": "Disable"
+    },
+    "COM4-DataBits": {
+      "type": "STRING",
+      "scalar": "8"
+    },
+    "COM4-DelayBetweenCharsMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "COM4-Description": {
+      "type": "STRING",
+      "scalar": "Serial port driver (boost:asio)"
+    },
+    "COM4-Fast USB to Serial": {
+      "type": "STRING",
+      "scalar": "Disable"
+    },
+    "COM4-Handshaking": {
+      "type": "STRING",
+      "scalar": "Off"
+    },
+    "COM4-Name": {
+      "type": "STRING",
+      "scalar": "COM4"
+    },
+    "COM4-Parity": {
+      "type": "STRING",
+      "scalar": "None"
+    },
+    "COM4-StopBits": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "COM4-Verbose": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "COM5-AnswerTimeout": {
+      "type": "STRING",
+      "scalar": "500.0000"
+    },
+    "COM5-BaudRate": {
+      "type": "STRING",
+      "scalar": "115200"
+    },
+    "COM5-DTR": {
+      "type": "STRING",
+      "scalar": "Disable"
+    },
+    "COM5-DataBits": {
+      "type": "STRING",
+      "scalar": "8"
+    },
+    "COM5-DelayBetweenCharsMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "COM5-Description": {
+      "type": "STRING",
+      "scalar": "Serial port driver (boost:asio)"
+    },
+    "COM5-Fast USB to Serial": {
+      "type": "STRING",
+      "scalar": "Disable"
+    },
+    "COM5-Handshaking": {
+      "type": "STRING",
+      "scalar": "Off"
+    },
+    "COM5-Name": {
+      "type": "STRING",
+      "scalar": "COM5"
+    },
+    "COM5-Parity": {
+      "type": "STRING",
+      "scalar": "None"
+    },
+    "COM5-StopBits": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "COM5-Verbose": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "Core-AutoFocus": {
+      "type": "STRING",
+      "scalar": "TIPFSStatus"
+    },
+    "Core-AutoShutter": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "Core-Camera": {
+      "type": "STRING",
+      "scalar": "HamamatsuHam"
+    },
+    "Core-ChannelGroup": {
+      "type": "STRING",
+      "scalar": "Channel"
+    },
+    "Core-Focus": {
+      "type": "STRING",
+      "scalar": "TIZDrive"
+    },
+    "Core-Galvo": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "Core-ImageProcessor": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "Core-Initialize": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "Core-SLM": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "Core-Shutter": {
+      "type": "STRING",
+      "scalar": "FluorescenceShutter"
+    },
+    "Core-TimeoutMs": {
+      "type": "STRING",
+      "scalar": "5000"
+    },
+    "Core-XYStage": {
+      "type": "STRING",
+      "scalar": "TIXYDrive"
+    },
+    "FluorescenceShutter-Description": {
+      "type": "STRING",
+      "scalar": "State device that is used as a shutter"
+    },
+    "FluorescenceShutter-Name": {
+      "type": "STRING",
+      "scalar": "State Device Shutter"
+    },
+    "FluorescenceShutter-State Device": {
+      "type": "STRING",
+      "scalar": "TS_TTL1-8"
+    },
+    "HamamatsuHam-BUFFER FRAMEBYTES": {
+      "type": "STRING",
+      "scalar": "8388608"
+    },
+    "HamamatsuHam-BUFFER PIXEL TYPE": {
+      "type": "STRING",
+      "scalar": "MONO16"
+    },
+    "HamamatsuHam-BUFFER ROWBYTES": {
+      "type": "STRING",
+      "scalar": "4096"
+    },
+    "HamamatsuHam-BUFFER TOP OFFSET BYTES": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-Binning": {
+      "type": "STRING",
+      "scalar": "1x1"
+    },
+    "HamamatsuHam-Bits per Channel": {
+      "type": "STRING",
+      "scalar": "16"
+    },
+    "HamamatsuHam-CONVERSION FACTOR COEFF": {
+      "type": "STRING",
+      "scalar": "0.4900"
+    },
+    "HamamatsuHam-CONVERSION FACTOR OFFSET": {
+      "type": "STRING",
+      "scalar": "100.0000"
+    },
+    "HamamatsuHam-Camera Bus": {
+      "type": "STRING",
+      "scalar": "AS-FBD-1XCLD-2PE8"
+    },
+    "HamamatsuHam-Camera Version": {
+      "type": "STRING",
+      "scalar": "2.50.A"
+    },
+    "HamamatsuHam-CameraID": {
+      "type": "STRING",
+      "scalar": "S/N: 781113"
+    },
+    "HamamatsuHam-CameraName": {
+      "type": "STRING",
+      "scalar": "C11440-22C"
+    },
+    "HamamatsuHam-DEFECT CORRECT MODE": {
+      "type": "STRING",
+      "scalar": "ON"
+    },
+    "HamamatsuHam-Description": {
+      "type": "STRING",
+      "scalar": "Hamamatsu device adapter 2.2.1.71"
+    },
+    "HamamatsuHam-EXPOSURE FULL RANGE": {
+      "type": "STRING",
+      "scalar": "DISABLE"
+    },
+    "HamamatsuHam-EXPOSURE TIME UNITS": {
+      "type": "STRING",
+      "scalar": "MILLISECONDS"
+    },
+    "HamamatsuHam-Exposure": {
+      "type": "STRING",
+      "scalar": "99.99"
+    },
+    "HamamatsuHam-FRAME STAMP PRODUCER": {
+      "type": "STRING",
+      "scalar": "DCAM MODULE"
+    },
+    "HamamatsuHam-IMAGE TOP OFFSET BYTES": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-INTERNAL LINE INTERVAL": {
+      "type": "STRING",
+      "scalar": "0.0097"
+    },
+    "HamamatsuHam-INTERNAL LINE INTERVAL UNITS": {
+      "type": "STRING",
+      "scalar": "MILLISECONDS"
+    },
+    "HamamatsuHam-INTERNAL LINE SPEED": {
+      "type": "STRING",
+      "scalar": "0.6671"
+    },
+    "HamamatsuHam-INTERNAL LINE SPEED UNITS": {
+      "type": "STRING",
+      "scalar": "METERS PER SECOND"
+    },
+    "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT": {
+      "type": "STRING",
+      "scalar": "60000"
+    },
+    "HamamatsuHam-Name": {
+      "type": "STRING",
+      "scalar": "HamamatsuHam_DCAM"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS": {
+      "type": "STRING",
+      "scalar": "SECONDS"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[0]": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[1]": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[2]": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER KIND[0]": {
+      "type": "STRING",
+      "scalar": "EXPOSURE"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER KIND[1]": {
+      "type": "STRING",
+      "scalar": "TRIGGER READY"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER KIND[2]": {
+      "type": "STRING",
+      "scalar": "TRIGGER READY"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS": {
+      "type": "STRING",
+      "scalar": "SECONDS"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]": {
+      "type": "STRING",
+      "scalar": "0.0010"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]": {
+      "type": "STRING",
+      "scalar": "0.0010"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]": {
+      "type": "STRING",
+      "scalar": "0.0010"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]": {
+      "type": "STRING",
+      "scalar": "POSITIVE"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]": {
+      "type": "STRING",
+      "scalar": "NEGATIVE"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]": {
+      "type": "STRING",
+      "scalar": "NEGATIVE"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]": {
+      "type": "STRING",
+      "scalar": "VSYNC"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]": {
+      "type": "STRING",
+      "scalar": "READOUT END"
+    },
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]": {
+      "type": "STRING",
+      "scalar": "READOUT END"
+    },
+    "HamamatsuHam-PixelType": {
+      "type": "STRING",
+      "scalar": "16bit"
+    },
+    "HamamatsuHam-READOUT DIRECTION": {
+      "type": "STRING",
+      "scalar": "DIVERGE"
+    },
+    "HamamatsuHam-RECORD FIXED BYTES PER FILE": {
+      "type": "STRING",
+      "scalar": "256"
+    },
+    "HamamatsuHam-RECORD FIXED BYTES PER FRAME": {
+      "type": "STRING",
+      "scalar": "8388672"
+    },
+    "HamamatsuHam-RECORD FIXED BYTES PER SESSION": {
+      "type": "STRING",
+      "scalar": "800"
+    },
+    "HamamatsuHam-ReadoutTime": {
+      "type": "STRING",
+      "scalar": "0.0100"
+    },
+    "HamamatsuHam-SENSOR MODE": {
+      "type": "STRING",
+      "scalar": "AREA"
+    },
+    "HamamatsuHam-SYSTEM ALIVE": {
+      "type": "STRING",
+      "scalar": "ONLINE"
+    },
+    "HamamatsuHam-ScanMode": {
+      "type": "STRING",
+      "scalar": "2"
+    },
+    "HamamatsuHam-TIME STAMP PRODUCER": {
+      "type": "STRING",
+      "scalar": "DCAM MODULE"
+    },
+    "HamamatsuHam-TRIGGER ACTIVE": {
+      "type": "STRING",
+      "scalar": "EDGE"
+    },
+    "HamamatsuHam-TRIGGER DELAY": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "HamamatsuHam-TRIGGER GLOBAL EXPOSURE": {
+      "type": "STRING",
+      "scalar": "DELAYED"
+    },
+    "HamamatsuHam-TRIGGER SOURCE": {
+      "type": "STRING",
+      "scalar": "INTERNAL"
+    },
+    "HamamatsuHam-TRIGGER TIMES": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "HamamatsuHam-TransposeCorrection": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-TransposeMirrorX": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-TransposeMirrorY": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-TransposeXY": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "HamamatsuHam-Trigger": {
+      "type": "STRING",
+      "scalar": "NORMAL"
+    },
+    "HamamatsuHam-TriggerPolarity": {
+      "type": "STRING",
+      "scalar": "NEGATIVE"
+    },
+    "Magnifier-Freely variable or fixed magnification": {
+      "type": "STRING",
+      "scalar": "Fixed"
+    },
+    "Magnifier-High Position Magnification": {
+      "type": "STRING",
+      "scalar": "1.5000"
+    },
+    "Magnifier-HubID": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "Magnifier-Position": {
+      "type": "STRING",
+      "scalar": "1x"
+    },
+    "TIAnalyzer-Inserted": {
+      "type": "STRING",
+      "scalar": "Extracted"
+    },
+    "TIAnalyzer-Name": {
+      "type": "STRING",
+      "scalar": "TIAnalyzer"
+    },
+    "TICondenserCassette-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TICondenserCassette-Label": {
+      "type": "STRING",
+      "scalar": "1-A"
+    },
+    "TICondenserCassette-Name": {
+      "type": "STRING",
+      "scalar": "TICondenserCassette"
+    },
+    "TICondenserCassette-State": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TIDiaShutter-Name": {
+      "type": "STRING",
+      "scalar": "TIDiaShutter"
+    },
+    "TIDiaShutter-State": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TIEpiShutter-Name": {
+      "type": "STRING",
+      "scalar": "TIEpiShutter"
+    },
+    "TIEpiShutter-State": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TIFilterBlock1-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TIFilterBlock1-Label": {
+      "type": "STRING",
+      "scalar": "1-SedatQuad"
+    },
+    "TIFilterBlock1-Name": {
+      "type": "STRING",
+      "scalar": "TIFilterBlock1"
+    },
+    "TIFilterBlock1-State": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TILightPath-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TILightPath-Label": {
+      "type": "STRING",
+      "scalar": "3-Right100"
+    },
+    "TILightPath-Name": {
+      "type": "STRING",
+      "scalar": "TILightPath"
+    },
+    "TILightPath-State": {
+      "type": "STRING",
+      "scalar": "2"
+    },
+    "TINosePiece-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TINosePiece-Label": {
+      "type": "STRING",
+      "scalar": "2-Plan Apo VC 20x NA 0.75 Dry"
+    },
+    "TINosePiece-Name": {
+      "type": "STRING",
+      "scalar": "TINosePiece"
+    },
+    "TINosePiece-State": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TIPFSOffset-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TIPFSOffset-Name": {
+      "type": "STRING",
+      "scalar": "TIPFSOffset"
+    },
+    "TIPFSOffset-Position": {
+      "type": "STRING",
+      "scalar": "166.6000"
+    },
+    "TIPFSOffset-RelockTimeoutMs": {
+      "type": "STRING",
+      "scalar": "3000.0000"
+    },
+    "TIPFSStatus-FullFocusTimeoutMs": {
+      "type": "STRING",
+      "scalar": "5000.0000"
+    },
+    "TIPFSStatus-FullFocusWaitAfterLockMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TIPFSStatus-Name": {
+      "type": "STRING",
+      "scalar": "TIPFSStatus"
+    },
+    "TIPFSStatus-State": {
+      "type": "STRING",
+      "scalar": "On"
+    },
+    "TIPFSStatus-Status": {
+      "type": "STRING",
+      "scalar": "Locked in focus"
+    },
+    "TIScope-DeviceAddress": {
+      "type": "STRING",
+      "scalar": "USB_DEVICE(1)"
+    },
+    "TIScope-DeviceIndex": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TIScope-DriverVersion": {
+      "type": "STRING",
+      "scalar": "Unknown"
+    },
+    "TIScope-FirmwareVersion": {
+      "type": "STRING",
+      "scalar": "Ti-E V5.50"
+    },
+    "TIScope-SoftwareVersion": {
+      "type": "STRING",
+      "scalar": "4.4.1.751"
+    },
+    "TIXYDrive-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TIXYDrive-Name": {
+      "type": "STRING",
+      "scalar": "TIXYDrive"
+    },
+    "TIXYDrive-SpeedX": {
+      "type": "STRING",
+      "scalar": "5"
+    },
+    "TIXYDrive-SpeedY": {
+      "type": "STRING",
+      "scalar": "5"
+    },
+    "TIXYDrive-ToleranceX": {
+      "type": "STRING",
+      "scalar": "5"
+    },
+    "TIXYDrive-ToleranceX_um": {
+      "type": "STRING",
+      "scalar": "0.5000"
+    },
+    "TIXYDrive-ToleranceY": {
+      "type": "STRING",
+      "scalar": "5"
+    },
+    "TIXYDrive-ToleranceY_um": {
+      "type": "STRING",
+      "scalar": "0.5000"
+    },
+    "TIXYDrive-TransposeMirrorX": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TIXYDrive-TransposeMirrorY": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TIZDrive-ExtraDelayMs": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "TIZDrive-Name": {
+      "type": "STRING",
+      "scalar": "TIZDrive"
+    },
+    "TIZDrive-Speed": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TIZDrive-Tolerance": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TIZDrive-Tolerance_um": {
+      "type": "STRING",
+      "scalar": "0.0250"
+    },
+    "TS_TTL1-8-Blank On": {
+      "type": "STRING",
+      "scalar": "Low"
+    },
+    "TS_TTL1-8-Blanking": {
+      "type": "STRING",
+      "scalar": "Off"
+    },
+    "TS_TTL1-8-Sequence": {
+      "type": "STRING",
+      "scalar": "On"
+    },
+    "TS_TTL1-8-Sequence Trigger Edge": {
+      "type": "STRING",
+      "scalar": "Rising"
+    },
+    "TS_TTL1-8-State": {
+      "type": "STRING",
+      "scalar": "64"
+    },
+    "TS_TTL1-8-TTL-1": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-2": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-3": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-4": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-5": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-6": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TS_TTL1-8-TTL-7": {
+      "type": "STRING",
+      "scalar": "1"
+    },
+    "TS_TTL1-8-TTL-8": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "TriggerScopeMM-Hub-COM Port": {
+      "type": "STRING",
+      "scalar": "COM5"
+    },
+    "TriggerScopeMM-Hub-DAC Bits": {
+      "type": "STRING",
+      "scalar": "16"
+    },
+    "TriggerScopeMM-Hub-Description": {
+      "type": "STRING",
+      "scalar": "TriggerScope"
+    },
+    "TriggerScopeMM-Hub-Firmware Version": {
+      "type": "STRING",
+      "scalar": "ARC TRIGGERSCOPE 16 R3C v.605-MM"
+    },
+    "TriggerScopeMM-Hub-Name": {
+      "type": "STRING",
+      "scalar": "TriggerScopeMM-Hub"
+    },
+    "TriggerScopeMM-Hub-Port": {
+      "type": "STRING",
+      "scalar": "COM5"
+    },
+    "TriggerScopeMM-Hub-Serial Receive": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "TriggerScopeMM-Hub-Serial Send": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "TriggerScopeMM-Hub-Software Version": {
+      "type": "STRING",
+      "scalar": "v1.0-MM, 8/24/2020"
+    },
+    "TriggerScopeMM-Hub-UseActionLEDs": {
+      "type": "STRING",
+      "scalar": "On"
+    },
+    "Wheel-A-Busy": {
+      "type": "STRING",
+      "scalar": "0"
+    },
+    "Wheel-A-ClosedPosition": {
+      "type": "STRING",
+      "scalar": ""
+    },
+    "Wheel-A-Delay_ms": {
+      "type": "STRING",
+      "scalar": "0.0000"
+    },
+    "Wheel-A-Description": {
+      "type": "STRING",
+      "scalar": "Sutter Lambda filter wheel adapter"
+    },
+    "Wheel-A-Label": {
+      "type": "STRING",
+      "scalar": "DAPI"
+    },
+    "Wheel-A-Name": {
+      "type": "STRING",
+      "scalar": "Wheel-A"
+    },
+    "Wheel-A-Port": {
+      "type": "STRING",
+      "scalar": "COM4"
+    },
+    "Wheel-A-Speed": {
+      "type": "STRING",
+      "scalar": "3"
+    },
+    "Wheel-A-State": {
+      "type": "STRING",
+      "scalar": "2"
+    },
+    "Wheel-A-Timeout(ms)": {
+      "type": "STRING",
+      "scalar": "500"
+    }
+  }
+},
+"FrameKey-0-0-0": {
+  "UUID": "2feae42d-dfe0-42fb-b5a6-438deee91b36",
+  "Camera": "HamamatsuHam",
+  "Binning": 1,
+  "ROI": "0-0-2048-2048",
+  "BitDepth": 16,
+  "Exposure-ms": 300.0,
+  "ElapsedTime-ms": 23932.0,
+  "ReceivedTime": "2026-10-16 09:39:15.321 -0700",
+  "PixelSizeUm": 0.3238,
+  "PixelSizeAffine": "-0.3239979811076061;6.187140617613031E-4;6.187140617613031E-4;-7.330948792043812E-4;-0.32369706791816655;0.0",
+  "PositionName": "Pos-1-001_001",
+  "XPositionUm": 662.1807389084,
+  "YPositionUm": 1562.4329867902584,
+  "ZPositionUm": 4266.000063568354,
+  "TINosePiece-ExtraDelayMs": "0.0000",
+  "TILightPath-ExtraDelayMs": "0.0000",
+  "Wheel-A-Delay_ms": "0.0000",
+  "TriggerScopeMM-Hub-Serial Receive": "",
+  "TIZDrive-ExtraDelayMs": "0.0000",
+  "Magnifier-HubID": "",
+  "COM5-StopBits": "1",
+  "HamamatsuHam-RECORD FIXED BYTES PER FILE": "256",
+  "COM4-Description": "Serial port driver (boost:asio)",
+  "COM4-StopBits": "1",
+  "TIScope-DriverVersion": "Unknown",
+  "TIPFSStatus-FullFocusWaitAfterLockMs": "0.0000",
+  "TICondenserCassette-State": "0",
+  "TIScope-SoftwareVersion": "4.4.1.751",
+  "COM5-Description": "Serial port driver (boost:asio)",
+  "HamamatsuHam-BUFFER ROWBYTES": "4096",
+  "COM5-Name": "COM5",
+  "TIXYDrive-Name": "TIXYDrive",
+  "TIXYDrive-ToleranceX": "5",
+  "COM4-DelayBetweenCharsMs": "0.0000",
+  "HamamatsuHam-CONVERSION FACTOR COEFF": "0.4900",
+  "TIZDrive-Tolerance": "1",
+  "TIPFSStatus-Status": "Locked in focus",
+  "COM5-DelayBetweenCharsMs": "0.0000",
+  "COM4-Name": "COM4",
+  "Core-ImageProcessor": "",
+  "TICondenserCassette-Label": "1-A",
+  "TIXYDrive-ToleranceY": "5",
+  "HamamatsuHam-BUFFER PIXEL TYPE": "MONO16",
+  "COM5-Parity": "None",
+  "Magnifier-Freely variable or fixed magnification": "Fixed",
+  "Core-SLM": "",
+  "COM4-Parity": "None",
+  "HamamatsuHam-EXPOSURE TIME UNITS": "MILLISECONDS",
+  "TIFilterBlock1-Name": "TIFilterBlock1",
+  "TS_TTL1-8-Sequence Trigger Edge": "Rising",
+  "COM5-BaudRate": "115200",
+  "TriggerScopeMM-Hub-Software Version": "v1.0-MM, 8/24/2020",
+  "COM4-Verbose": "1",
+  "HamamatsuHam-CONVERSION FACTOR OFFSET": "100.0000",
+  "TIEpiShutter-State": "0",
+  "COM4-BaudRate": "128000",
+  "TS_TTL1-8-Blank On": "Low",
+  "HamamatsuHam-RECORD FIXED BYTES PER FRAME": "8388672",
+  "TICondenserCassette-ExtraDelayMs": "0.0000",
+  "COM4-DTR": "Disable",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS": "SECONDS",
+  "TriggerScopeMM-Hub-COM Port": "COM5",
+  "COM4-AnswerTimeout": "500.0000",
+  "COM5-DataBits": "8",
+  "Wheel-A-Speed": "3",
+  "COM5-DTR": "Disable",
+  "HamamatsuHam-TransposeCorrection": "0",
+  "Wheel-A-Name": "Wheel-A",
+  "TriggerScopeMM-Hub-DAC Bits": "16",
+  "COM5-Verbose": "1",
+  "HamamatsuHam-READOUT DIRECTION": "DIVERGE",
+  "TIDiaShutter-State": "0",
+  "COM5-AnswerTimeout": "500.0000",
+  "TIAnalyzer-Inserted": "Extracted",
+  "HamamatsuHam-Trigger": "NORMAL",
+  "Core-Focus": "TIZDrive",
+  "COM4-DataBits": "8",
+  "TIXYDrive-SpeedX": "5",
+  "Core-ChannelGroup": "Channel",
+  "TriggerScopeMM-Hub-Port": "COM5",
+  "TILightPath-State": "2",
+  "HamamatsuHam-SYSTEM ALIVE": "ONLINE",
+  "TINosePiece-State": "1",
+  "HamamatsuHam-INTERNAL LINE INTERVAL UNITS": "MILLISECONDS",
+  "TS_TTL1-8-Blanking": "Off",
+  "TIXYDrive-SpeedY": "5",
+  "HamamatsuHam-Camera Version": "2.50.A",
+  "TriggerScopeMM-Hub-Serial Send": "",
+  "TIPFSOffset-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-TransposeXY": "0",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]": "0.0010",
+  "HamamatsuHam-Binning": "1x1",
+  "TILightPath-Label": "3-Right100",
+  "TINosePiece-Label": "2-Plan Apo VC 20x NA 0.75 Dry",
+  "HamamatsuHam-TRIGGER DELAY": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]": "0.0010",
+  "TIScope-DeviceIndex": "1",
+  "FluorescenceShutter-Description": "State device that is used as a shutter",
+  "HamamatsuHam-TransposeMirrorX": "0",
+  "HamamatsuHam-ScanMode": "2",
+  "HamamatsuHam-TRIGGER GLOBAL EXPOSURE": "DELAYED",
+  "HamamatsuHam-Description": "Hamamatsu device adapter 2.2.1.71",
+  "HamamatsuHam-CameraID": "S/N: 781113",
+  "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT": "60000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]": "0.0010",
+  "HamamatsuHam-TransposeMirrorY": "0",
+  "Core-XYStage": "TIXYDrive",
+  "TIScope-FirmwareVersion": "Ti-E V5.50",
+  "TIScope-DeviceAddress": "USB_DEVICE(1)",
+  "HamamatsuHam-TRIGGER TIMES": "1",
+  "HamamatsuHam-FRAME STAMP PRODUCER": "DCAM MODULE",
+  "Core-AutoShutter": "1",
+  "HamamatsuHam-INTERNAL LINE SPEED": "0.6671",
+  "HamamatsuHam-BUFFER FRAMEBYTES": "8388608",
+  "HamamatsuHam-TRIGGER SOURCE": "INTERNAL",
+  "TIPFSStatus-FullFocusTimeoutMs": "5000.0000",
+  "HamamatsuHam-RECORD FIXED BYTES PER SESSION": "800",
+  "TINosePiece-Name": "TINosePiece",
+  "TILightPath-Name": "TILightPath",
+  "TIZDrive-Tolerance_um": "0.0250",
+  "HamamatsuHam-PixelType": "16bit",
+  "COM5-Fast USB to Serial": "Disable",
+  "TIXYDrive-ToleranceY_um": "0.5000",
+  "TIXYDrive-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]": "READOUT END",
+  "TIDiaShutter-Name": "TIDiaShutter",
+  "COM4-Fast USB to Serial": "Disable",
+  "Core-Camera": "HamamatsuHam",
+  "TriggerScopeMM-Hub-Description": "TriggerScope",
+  "TIXYDrive-ToleranceX_um": "0.5000",
+  "Wheel-A-ClosedPosition": "",
+  "TS_TTL1-8-TTL-1": "0",
+  "HamamatsuHam-Camera Bus": "AS-FBD-1XCLD-2PE8",
+  "FluorescenceShutter-State Device": "TS_TTL1-8",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]": "READOUT END",
+  "Wheel-A-State": "2",
+  "TIZDrive-Name": "TIZDrive",
+  "TriggerScopeMM-Hub-Name": "TriggerScopeMM-Hub",
+  "HamamatsuHam-TIME STAMP PRODUCER": "DCAM MODULE",
+  "TIEpiShutter-Name": "TIEpiShutter",
+  "HamamatsuHam-Bits per Channel": "16",
+  "TS_TTL1-8-State": "2",
+  "TS_TTL1-8-TTL-2": "0",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]": "VSYNC",
+  "HamamatsuHam-Exposure": "300.00",
+  "TIFilterBlock1-State": "0",
+  "TS_TTL1-8-TTL-3": "0",
+  "TIFilterBlock1-ExtraDelayMs": "0.0000",
+  "Wheel-A-Label": "Cy3",
+  "TS_TTL1-8-TTL-4": "0",
+  "HamamatsuHam-EXPOSURE FULL RANGE": "DISABLE",
+  "TIPFSOffset-RelockTimeoutMs": "3000.0000",
+  "TS_TTL1-8-TTL-5": "0",
+  "HamamatsuHam-ReadoutTime": "0.0100",
+  "Wheel-A-Busy": "0",
+  "Magnifier-Position": "1x",
+  "TS_TTL1-8-TTL-6": "0",
+  "TIFilterBlock1-Label": "1-SedatQuad",
+  "TIXYDrive-TransposeMirrorX": "1",
+  "HamamatsuHam-Name": "HamamatsuHam_DCAM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS": "SECONDS",
+  "Core-TimeoutMs": "5000",
+  "TS_TTL1-8-TTL-7": "1",
+  "FluorescenceShutter-Name": "State Device Shutter",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[2]": "TRIGGER READY",
+  "TIXYDrive-TransposeMirrorY": "0",
+  "TICondenserCassette-Name": "TICondenserCassette",
+  "HamamatsuHam-DEFECT CORRECT MODE": "ON",
+  "TS_TTL1-8-TTL-8": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[1]": "TRIGGER READY",
+  "COM4-Handshaking": "Off",
+  "HamamatsuHam-TriggerPolarity": "NEGATIVE",
+  "HamamatsuHam-SENSOR MODE": "AREA",
+  "COM5-Handshaking": "Off",
+  "TIPFSOffset-Position": "166.6000",
+  "HamamatsuHam-BUFFER TOP OFFSET BYTES": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[0]": "EXPOSURE",
+  "Magnifier-High Position Magnification": "1.5000",
+  "Core-AutoFocus": "TIPFSStatus",
+  "TriggerScopeMM-Hub-Firmware Version": "ARC TRIGGERSCOPE 16 R3C v.605-MM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[2]": "0.0000",
+  "HamamatsuHam-INTERNAL LINE INTERVAL": "0.0097",
+  "HamamatsuHam-IMAGE TOP OFFSET BYTES": "0",
+  "HamamatsuHam-TRIGGER ACTIVE": "EDGE",
+  "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT": "0",
+  "TriggerScopeMM-Hub-UseActionLEDs": "On",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]": "NEGATIVE",
+  "Core-Galvo": "",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[1]": "0.0000",
+  "TIAnalyzer-Name": "TIAnalyzer",
+  "TIPFSOffset-Name": "TIPFSOffset",
+  "Wheel-A-Timeout(ms)": "500",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]": "NEGATIVE",
+  "Wheel-A-Description": "Sutter Lambda filter wheel adapter",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[0]": "0.0000",
+  "TIPFSStatus-State": "On",
+  "Core-Initialize": "1",
+  "TS_TTL1-8-Sequence": "On",
+  "HamamatsuHam-CameraName": "C11440-22C",
+  "TIPFSStatus-Name": "TIPFSStatus",
+  "TIZDrive-Speed": "1",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]": "POSITIVE",
+  "Wheel-A-Port": "COM4",
+  "HamamatsuHam-INTERNAL LINE SPEED UNITS": "METERS PER SECOND",
+  "Core-Shutter": "FluorescenceShutter",
+  "ScopeDataKeys": [
+    "TINosePiece-ExtraDelayMs",
+    "TILightPath-ExtraDelayMs",
+    "Wheel-A-Delay_ms",
+    "TriggerScopeMM-Hub-Serial Receive",
+    "TIZDrive-ExtraDelayMs",
+    "Magnifier-HubID",
+    "COM5-StopBits",
+    "HamamatsuHam-RECORD FIXED BYTES PER FILE",
+    "COM4-Description",
+    "COM4-StopBits",
+    "TIScope-DriverVersion",
+    "TIPFSStatus-FullFocusWaitAfterLockMs",
+    "TICondenserCassette-State",
+    "TIScope-SoftwareVersion",
+    "COM5-Description",
+    "HamamatsuHam-BUFFER ROWBYTES",
+    "COM5-Name",
+    "TIXYDrive-Name",
+    "TIXYDrive-ToleranceX",
+    "COM4-DelayBetweenCharsMs",
+    "HamamatsuHam-CONVERSION FACTOR COEFF",
+    "TIZDrive-Tolerance",
+    "TIPFSStatus-Status",
+    "COM5-DelayBetweenCharsMs",
+    "COM4-Name",
+    "Core-ImageProcessor",
+    "TICondenserCassette-Label",
+    "TIXYDrive-ToleranceY",
+    "HamamatsuHam-BUFFER PIXEL TYPE",
+    "COM5-Parity",
+    "Magnifier-Freely variable or fixed magnification",
+    "Core-SLM",
+    "COM4-Parity",
+    "HamamatsuHam-EXPOSURE TIME UNITS",
+    "TIFilterBlock1-Name",
+    "TS_TTL1-8-Sequence Trigger Edge",
+    "COM5-BaudRate",
+    "TriggerScopeMM-Hub-Software Version",
+    "COM4-Verbose",
+    "HamamatsuHam-CONVERSION FACTOR OFFSET",
+    "TIEpiShutter-State",
+    "COM4-BaudRate",
+    "TS_TTL1-8-Blank On",
+    "HamamatsuHam-RECORD FIXED BYTES PER FRAME",
+    "TICondenserCassette-ExtraDelayMs",
+    "COM4-DTR",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS",
+    "TriggerScopeMM-Hub-COM Port",
+    "COM4-AnswerTimeout",
+    "COM5-DataBits",
+    "Wheel-A-Speed",
+    "COM5-DTR",
+    "HamamatsuHam-TransposeCorrection",
+    "Wheel-A-Name",
+    "TriggerScopeMM-Hub-DAC Bits",
+    "COM5-Verbose",
+    "HamamatsuHam-READOUT DIRECTION",
+    "TIDiaShutter-State",
+    "COM5-AnswerTimeout",
+    "TIAnalyzer-Inserted",
+    "HamamatsuHam-Trigger",
+    "Core-Focus",
+    "COM4-DataBits",
+    "TIXYDrive-SpeedX",
+    "Core-ChannelGroup",
+    "TriggerScopeMM-Hub-Port",
+    "TILightPath-State",
+    "HamamatsuHam-SYSTEM ALIVE",
+    "TINosePiece-State",
+    "HamamatsuHam-INTERNAL LINE INTERVAL UNITS",
+    "TS_TTL1-8-Blanking",
+    "TIXYDrive-SpeedY",
+    "HamamatsuHam-Camera Version",
+    "TriggerScopeMM-Hub-Serial Send",
+    "TIPFSOffset-ExtraDelayMs",
+    "HamamatsuHam-TransposeXY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]",
+    "HamamatsuHam-Binning",
+    "TILightPath-Label",
+    "TINosePiece-Label",
+    "HamamatsuHam-TRIGGER DELAY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]",
+    "TIScope-DeviceIndex",
+    "FluorescenceShutter-Description",
+    "HamamatsuHam-TransposeMirrorX",
+    "HamamatsuHam-ScanMode",
+    "HamamatsuHam-TRIGGER GLOBAL EXPOSURE",
+    "HamamatsuHam-Description",
+    "HamamatsuHam-CameraID",
+    "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]",
+    "HamamatsuHam-TransposeMirrorY",
+    "Core-XYStage",
+    "TIScope-FirmwareVersion",
+    "TIScope-DeviceAddress",
+    "HamamatsuHam-TRIGGER TIMES",
+    "HamamatsuHam-FRAME STAMP PRODUCER",
+    "Core-AutoShutter",
+    "HamamatsuHam-INTERNAL LINE SPEED",
+    "HamamatsuHam-BUFFER FRAMEBYTES",
+    "HamamatsuHam-TRIGGER SOURCE",
+    "TIPFSStatus-FullFocusTimeoutMs",
+    "HamamatsuHam-RECORD FIXED BYTES PER SESSION",
+    "TINosePiece-Name",
+    "TILightPath-Name",
+    "TIZDrive-Tolerance_um",
+    "HamamatsuHam-PixelType",
+    "COM5-Fast USB to Serial",
+    "TIXYDrive-ToleranceY_um",
+    "TIXYDrive-ExtraDelayMs",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]",
+    "TIDiaShutter-Name",
+    "COM4-Fast USB to Serial",
+    "Core-Camera",
+    "TriggerScopeMM-Hub-Description",
+    "TIXYDrive-ToleranceX_um",
+    "Wheel-A-ClosedPosition",
+    "TS_TTL1-8-TTL-1",
+    "HamamatsuHam-Camera Bus",
+    "FluorescenceShutter-State Device",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]",
+    "Wheel-A-State",
+    "TIZDrive-Name",
+    "TriggerScopeMM-Hub-Name",
+    "HamamatsuHam-TIME STAMP PRODUCER",
+    "TIEpiShutter-Name",
+    "HamamatsuHam-Bits per Channel",
+    "TS_TTL1-8-State",
+    "TS_TTL1-8-TTL-2",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]",
+    "HamamatsuHam-Exposure",
+    "TIFilterBlock1-State",
+    "TS_TTL1-8-TTL-3",
+    "TIFilterBlock1-ExtraDelayMs",
+    "Wheel-A-Label",
+    "TS_TTL1-8-TTL-4",
+    "HamamatsuHam-EXPOSURE FULL RANGE",
+    "TIPFSOffset-RelockTimeoutMs",
+    "TS_TTL1-8-TTL-5",
+    "HamamatsuHam-ReadoutTime",
+    "Wheel-A-Busy",
+    "Magnifier-Position",
+    "TS_TTL1-8-TTL-6",
+    "TIFilterBlock1-Label",
+    "TIXYDrive-TransposeMirrorX",
+    "HamamatsuHam-Name",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS",
+    "Core-TimeoutMs",
+    "TS_TTL1-8-TTL-7",
+    "FluorescenceShutter-Name",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[2]",
+    "TIXYDrive-TransposeMirrorY",
+    "TICondenserCassette-Name",
+    "HamamatsuHam-DEFECT CORRECT MODE",
+    "TS_TTL1-8-TTL-8",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[1]",
+    "COM4-Handshaking",
+    "HamamatsuHam-TriggerPolarity",
+    "HamamatsuHam-SENSOR MODE",
+    "COM5-Handshaking",
+    "TIPFSOffset-Position",
+    "HamamatsuHam-BUFFER TOP OFFSET BYTES",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[0]",
+    "Magnifier-High Position Magnification",
+    "Core-AutoFocus",
+    "TriggerScopeMM-Hub-Firmware Version",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[2]",
+    "HamamatsuHam-INTERNAL LINE INTERVAL",
+    "HamamatsuHam-IMAGE TOP OFFSET BYTES",
+    "HamamatsuHam-TRIGGER ACTIVE",
+    "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT",
+    "TriggerScopeMM-Hub-UseActionLEDs",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]",
+    "Core-Galvo",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[1]",
+    "TIAnalyzer-Name",
+    "TIPFSOffset-Name",
+    "Wheel-A-Timeout(ms)",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]",
+    "Wheel-A-Description",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[0]",
+    "TIPFSStatus-State",
+    "Core-Initialize",
+    "TS_TTL1-8-Sequence",
+    "HamamatsuHam-CameraName",
+    "TIPFSStatus-Name",
+    "TIZDrive-Speed",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]",
+    "Wheel-A-Port",
+    "HamamatsuHam-INTERNAL LINE SPEED UNITS",
+    "Core-Shutter"
+  ],
+  "UserData": {},
+  "FileName": "3Channel_Raw_25Pos_1_MMStack_Pos-1-001_001.ome.tif"
+},
+"FrameKey-0-1-0": {
+  "UUID": "334a99a6-e3a6-47b0-bc87-bc1ff7138a4e",
+  "Camera": "HamamatsuHam",
+  "Binning": 1,
+  "ROI": "0-0-2048-2048",
+  "BitDepth": 16,
+  "Exposure-ms": 300.0,
+  "ElapsedTime-ms": 24789.0,
+  "ReceivedTime": "2026-10-16 09:39:16.177 -0700",
+  "PixelSizeUm": 0.3238,
+  "PixelSizeAffine": "-0.3239979811076061;6.187140617613031E-4;6.187140617613031E-4;-7.330948792043812E-4;-0.32369706791816655;0.0",
+  "PositionName": "Pos-1-001_001",
+  "XPositionUm": 662.1807389084,
+  "YPositionUm": 1562.4329867902584,
+  "ZPositionUm": 4266.000063568354,
+  "TINosePiece-ExtraDelayMs": "0.0000",
+  "TILightPath-ExtraDelayMs": "0.0000",
+  "Wheel-A-Delay_ms": "0.0000",
+  "TriggerScopeMM-Hub-Serial Receive": "",
+  "TIZDrive-ExtraDelayMs": "0.0000",
+  "Magnifier-HubID": "",
+  "COM5-StopBits": "1",
+  "HamamatsuHam-RECORD FIXED BYTES PER FILE": "256",
+  "COM4-Description": "Serial port driver (boost:asio)",
+  "COM4-StopBits": "1",
+  "TIScope-DriverVersion": "Unknown",
+  "TIPFSStatus-FullFocusWaitAfterLockMs": "0.0000",
+  "TICondenserCassette-State": "0",
+  "TIScope-SoftwareVersion": "4.4.1.751",
+  "COM5-Description": "Serial port driver (boost:asio)",
+  "HamamatsuHam-BUFFER ROWBYTES": "4096",
+  "COM5-Name": "COM5",
+  "TIXYDrive-Name": "TIXYDrive",
+  "TIXYDrive-ToleranceX": "5",
+  "COM4-DelayBetweenCharsMs": "0.0000",
+  "HamamatsuHam-CONVERSION FACTOR COEFF": "0.4900",
+  "TIZDrive-Tolerance": "1",
+  "TIPFSStatus-Status": "Locked in focus",
+  "COM5-DelayBetweenCharsMs": "0.0000",
+  "COM4-Name": "COM4",
+  "Core-ImageProcessor": "",
+  "TICondenserCassette-Label": "1-A",
+  "TIXYDrive-ToleranceY": "5",
+  "HamamatsuHam-BUFFER PIXEL TYPE": "MONO16",
+  "COM5-Parity": "None",
+  "Magnifier-Freely variable or fixed magnification": "Fixed",
+  "Core-SLM": "",
+  "COM4-Parity": "None",
+  "HamamatsuHam-EXPOSURE TIME UNITS": "MILLISECONDS",
+  "TIFilterBlock1-Name": "TIFilterBlock1",
+  "TS_TTL1-8-Sequence Trigger Edge": "Rising",
+  "COM5-BaudRate": "115200",
+  "TriggerScopeMM-Hub-Software Version": "v1.0-MM, 8/24/2020",
+  "COM4-Verbose": "1",
+  "HamamatsuHam-CONVERSION FACTOR OFFSET": "100.0000",
+  "TIEpiShutter-State": "0",
+  "COM4-BaudRate": "128000",
+  "TS_TTL1-8-Blank On": "Low",
+  "HamamatsuHam-RECORD FIXED BYTES PER FRAME": "8388672",
+  "TICondenserCassette-ExtraDelayMs": "0.0000",
+  "COM4-DTR": "Disable",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS": "SECONDS",
+  "TriggerScopeMM-Hub-COM Port": "COM5",
+  "COM4-AnswerTimeout": "500.0000",
+  "COM5-DataBits": "8",
+  "Wheel-A-Speed": "3",
+  "COM5-DTR": "Disable",
+  "HamamatsuHam-TransposeCorrection": "0",
+  "Wheel-A-Name": "Wheel-A",
+  "TriggerScopeMM-Hub-DAC Bits": "16",
+  "COM5-Verbose": "1",
+  "HamamatsuHam-READOUT DIRECTION": "DIVERGE",
+  "TIDiaShutter-State": "0",
+  "COM5-AnswerTimeout": "500.0000",
+  "TIAnalyzer-Inserted": "Extracted",
+  "HamamatsuHam-Trigger": "NORMAL",
+  "Core-Focus": "TIZDrive",
+  "COM4-DataBits": "8",
+  "TIXYDrive-SpeedX": "5",
+  "Core-ChannelGroup": "Channel",
+  "TriggerScopeMM-Hub-Port": "COM5",
+  "TILightPath-State": "2",
+  "HamamatsuHam-SYSTEM ALIVE": "ONLINE",
+  "TINosePiece-State": "1",
+  "HamamatsuHam-INTERNAL LINE INTERVAL UNITS": "MILLISECONDS",
+  "TS_TTL1-8-Blanking": "Off",
+  "TIXYDrive-SpeedY": "5",
+  "HamamatsuHam-Camera Version": "2.50.A",
+  "TriggerScopeMM-Hub-Serial Send": "",
+  "TIPFSOffset-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-TransposeXY": "0",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]": "0.0010",
+  "HamamatsuHam-Binning": "1x1",
+  "TILightPath-Label": "3-Right100",
+  "TINosePiece-Label": "2-Plan Apo VC 20x NA 0.75 Dry",
+  "HamamatsuHam-TRIGGER DELAY": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]": "0.0010",
+  "TIScope-DeviceIndex": "1",
+  "FluorescenceShutter-Description": "State device that is used as a shutter",
+  "HamamatsuHam-TransposeMirrorX": "0",
+  "HamamatsuHam-ScanMode": "2",
+  "HamamatsuHam-TRIGGER GLOBAL EXPOSURE": "DELAYED",
+  "HamamatsuHam-Description": "Hamamatsu device adapter 2.2.1.71",
+  "HamamatsuHam-CameraID": "S/N: 781113",
+  "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT": "60000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]": "0.0010",
+  "HamamatsuHam-TransposeMirrorY": "0",
+  "Core-XYStage": "TIXYDrive",
+  "TIScope-FirmwareVersion": "Ti-E V5.50",
+  "TIScope-DeviceAddress": "USB_DEVICE(1)",
+  "HamamatsuHam-TRIGGER TIMES": "1",
+  "HamamatsuHam-FRAME STAMP PRODUCER": "DCAM MODULE",
+  "Core-AutoShutter": "1",
+  "HamamatsuHam-INTERNAL LINE SPEED": "0.6671",
+  "HamamatsuHam-BUFFER FRAMEBYTES": "8388608",
+  "HamamatsuHam-TRIGGER SOURCE": "INTERNAL",
+  "TIPFSStatus-FullFocusTimeoutMs": "5000.0000",
+  "HamamatsuHam-RECORD FIXED BYTES PER SESSION": "800",
+  "TINosePiece-Name": "TINosePiece",
+  "TILightPath-Name": "TILightPath",
+  "TIZDrive-Tolerance_um": "0.0250",
+  "HamamatsuHam-PixelType": "16bit",
+  "COM5-Fast USB to Serial": "Disable",
+  "TIXYDrive-ToleranceY_um": "0.5000",
+  "TIXYDrive-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]": "READOUT END",
+  "TIDiaShutter-Name": "TIDiaShutter",
+  "COM4-Fast USB to Serial": "Disable",
+  "Core-Camera": "HamamatsuHam",
+  "TriggerScopeMM-Hub-Description": "TriggerScope",
+  "TIXYDrive-ToleranceX_um": "0.5000",
+  "Wheel-A-ClosedPosition": "",
+  "TS_TTL1-8-TTL-1": "0",
+  "HamamatsuHam-Camera Bus": "AS-FBD-1XCLD-2PE8",
+  "FluorescenceShutter-State Device": "TS_TTL1-8",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]": "READOUT END",
+  "Wheel-A-State": "2",
+  "TIZDrive-Name": "TIZDrive",
+  "TriggerScopeMM-Hub-Name": "TriggerScopeMM-Hub",
+  "HamamatsuHam-TIME STAMP PRODUCER": "DCAM MODULE",
+  "TIEpiShutter-Name": "TIEpiShutter",
+  "HamamatsuHam-Bits per Channel": "16",
+  "TS_TTL1-8-State": "4",
+  "TS_TTL1-8-TTL-2": "0",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]": "VSYNC",
+  "HamamatsuHam-Exposure": "300.00",
+  "TIFilterBlock1-State": "0",
+  "TS_TTL1-8-TTL-3": "0",
+  "TIFilterBlock1-ExtraDelayMs": "0.0000",
+  "Wheel-A-Label": "FITC",
+  "TS_TTL1-8-TTL-4": "0",
+  "HamamatsuHam-EXPOSURE FULL RANGE": "DISABLE",
+  "TIPFSOffset-RelockTimeoutMs": "3000.0000",
+  "TS_TTL1-8-TTL-5": "0",
+  "HamamatsuHam-ReadoutTime": "0.0100",
+  "Wheel-A-Busy": "0",
+  "Magnifier-Position": "1x",
+  "TS_TTL1-8-TTL-6": "0",
+  "TIFilterBlock1-Label": "1-SedatQuad",
+  "TIXYDrive-TransposeMirrorX": "1",
+  "HamamatsuHam-Name": "HamamatsuHam_DCAM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS": "SECONDS",
+  "Core-TimeoutMs": "5000",
+  "TS_TTL1-8-TTL-7": "1",
+  "FluorescenceShutter-Name": "State Device Shutter",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[2]": "TRIGGER READY",
+  "TIXYDrive-TransposeMirrorY": "0",
+  "TICondenserCassette-Name": "TICondenserCassette",
+  "HamamatsuHam-DEFECT CORRECT MODE": "ON",
+  "TS_TTL1-8-TTL-8": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[1]": "TRIGGER READY",
+  "COM4-Handshaking": "Off",
+  "HamamatsuHam-TriggerPolarity": "NEGATIVE",
+  "HamamatsuHam-SENSOR MODE": "AREA",
+  "COM5-Handshaking": "Off",
+  "TIPFSOffset-Position": "166.6000",
+  "HamamatsuHam-BUFFER TOP OFFSET BYTES": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[0]": "EXPOSURE",
+  "Magnifier-High Position Magnification": "1.5000",
+  "Core-AutoFocus": "TIPFSStatus",
+  "TriggerScopeMM-Hub-Firmware Version": "ARC TRIGGERSCOPE 16 R3C v.605-MM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[2]": "0.0000",
+  "HamamatsuHam-INTERNAL LINE INTERVAL": "0.0097",
+  "HamamatsuHam-IMAGE TOP OFFSET BYTES": "0",
+  "HamamatsuHam-TRIGGER ACTIVE": "EDGE",
+  "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT": "0",
+  "TriggerScopeMM-Hub-UseActionLEDs": "On",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]": "NEGATIVE",
+  "Core-Galvo": "",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[1]": "0.0000",
+  "TIAnalyzer-Name": "TIAnalyzer",
+  "TIPFSOffset-Name": "TIPFSOffset",
+  "Wheel-A-Timeout(ms)": "500",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]": "NEGATIVE",
+  "Wheel-A-Description": "Sutter Lambda filter wheel adapter",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[0]": "0.0000",
+  "TIPFSStatus-State": "On",
+  "Core-Initialize": "1",
+  "TS_TTL1-8-Sequence": "On",
+  "HamamatsuHam-CameraName": "C11440-22C",
+  "TIPFSStatus-Name": "TIPFSStatus",
+  "TIZDrive-Speed": "1",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]": "POSITIVE",
+  "Wheel-A-Port": "COM4",
+  "HamamatsuHam-INTERNAL LINE SPEED UNITS": "METERS PER SECOND",
+  "Core-Shutter": "FluorescenceShutter",
+  "ScopeDataKeys": [
+    "TINosePiece-ExtraDelayMs",
+    "TILightPath-ExtraDelayMs",
+    "Wheel-A-Delay_ms",
+    "TriggerScopeMM-Hub-Serial Receive",
+    "TIZDrive-ExtraDelayMs",
+    "Magnifier-HubID",
+    "COM5-StopBits",
+    "HamamatsuHam-RECORD FIXED BYTES PER FILE",
+    "COM4-Description",
+    "COM4-StopBits",
+    "TIScope-DriverVersion",
+    "TIPFSStatus-FullFocusWaitAfterLockMs",
+    "TICondenserCassette-State",
+    "TIScope-SoftwareVersion",
+    "COM5-Description",
+    "HamamatsuHam-BUFFER ROWBYTES",
+    "COM5-Name",
+    "TIXYDrive-Name",
+    "TIXYDrive-ToleranceX",
+    "COM4-DelayBetweenCharsMs",
+    "HamamatsuHam-CONVERSION FACTOR COEFF",
+    "TIZDrive-Tolerance",
+    "TIPFSStatus-Status",
+    "COM5-DelayBetweenCharsMs",
+    "COM4-Name",
+    "Core-ImageProcessor",
+    "TICondenserCassette-Label",
+    "TIXYDrive-ToleranceY",
+    "HamamatsuHam-BUFFER PIXEL TYPE",
+    "COM5-Parity",
+    "Magnifier-Freely variable or fixed magnification",
+    "Core-SLM",
+    "COM4-Parity",
+    "HamamatsuHam-EXPOSURE TIME UNITS",
+    "TIFilterBlock1-Name",
+    "TS_TTL1-8-Sequence Trigger Edge",
+    "COM5-BaudRate",
+    "TriggerScopeMM-Hub-Software Version",
+    "COM4-Verbose",
+    "HamamatsuHam-CONVERSION FACTOR OFFSET",
+    "TIEpiShutter-State",
+    "COM4-BaudRate",
+    "TS_TTL1-8-Blank On",
+    "HamamatsuHam-RECORD FIXED BYTES PER FRAME",
+    "TICondenserCassette-ExtraDelayMs",
+    "COM4-DTR",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS",
+    "TriggerScopeMM-Hub-COM Port",
+    "COM4-AnswerTimeout",
+    "COM5-DataBits",
+    "Wheel-A-Speed",
+    "COM5-DTR",
+    "HamamatsuHam-TransposeCorrection",
+    "Wheel-A-Name",
+    "TriggerScopeMM-Hub-DAC Bits",
+    "COM5-Verbose",
+    "HamamatsuHam-READOUT DIRECTION",
+    "TIDiaShutter-State",
+    "COM5-AnswerTimeout",
+    "TIAnalyzer-Inserted",
+    "HamamatsuHam-Trigger",
+    "Core-Focus",
+    "COM4-DataBits",
+    "TIXYDrive-SpeedX",
+    "Core-ChannelGroup",
+    "TriggerScopeMM-Hub-Port",
+    "TILightPath-State",
+    "HamamatsuHam-SYSTEM ALIVE",
+    "TINosePiece-State",
+    "HamamatsuHam-INTERNAL LINE INTERVAL UNITS",
+    "TS_TTL1-8-Blanking",
+    "TIXYDrive-SpeedY",
+    "HamamatsuHam-Camera Version",
+    "TriggerScopeMM-Hub-Serial Send",
+    "TIPFSOffset-ExtraDelayMs",
+    "HamamatsuHam-TransposeXY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]",
+    "HamamatsuHam-Binning",
+    "TILightPath-Label",
+    "TINosePiece-Label",
+    "HamamatsuHam-TRIGGER DELAY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]",
+    "TIScope-DeviceIndex",
+    "FluorescenceShutter-Description",
+    "HamamatsuHam-TransposeMirrorX",
+    "HamamatsuHam-ScanMode",
+    "HamamatsuHam-TRIGGER GLOBAL EXPOSURE",
+    "HamamatsuHam-Description",
+    "HamamatsuHam-CameraID",
+    "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]",
+    "HamamatsuHam-TransposeMirrorY",
+    "Core-XYStage",
+    "TIScope-FirmwareVersion",
+    "TIScope-DeviceAddress",
+    "HamamatsuHam-TRIGGER TIMES",
+    "HamamatsuHam-FRAME STAMP PRODUCER",
+    "Core-AutoShutter",
+    "HamamatsuHam-INTERNAL LINE SPEED",
+    "HamamatsuHam-BUFFER FRAMEBYTES",
+    "HamamatsuHam-TRIGGER SOURCE",
+    "TIPFSStatus-FullFocusTimeoutMs",
+    "HamamatsuHam-RECORD FIXED BYTES PER SESSION",
+    "TINosePiece-Name",
+    "TILightPath-Name",
+    "TIZDrive-Tolerance_um",
+    "HamamatsuHam-PixelType",
+    "COM5-Fast USB to Serial",
+    "TIXYDrive-ToleranceY_um",
+    "TIXYDrive-ExtraDelayMs",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]",
+    "TIDiaShutter-Name",
+    "COM4-Fast USB to Serial",
+    "Core-Camera",
+    "TriggerScopeMM-Hub-Description",
+    "TIXYDrive-ToleranceX_um",
+    "Wheel-A-ClosedPosition",
+    "TS_TTL1-8-TTL-1",
+    "HamamatsuHam-Camera Bus",
+    "FluorescenceShutter-State Device",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]",
+    "Wheel-A-State",
+    "TIZDrive-Name",
+    "TriggerScopeMM-Hub-Name",
+    "HamamatsuHam-TIME STAMP PRODUCER",
+    "TIEpiShutter-Name",
+    "HamamatsuHam-Bits per Channel",
+    "TS_TTL1-8-State",
+    "TS_TTL1-8-TTL-2",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]",
+    "HamamatsuHam-Exposure",
+    "TIFilterBlock1-State",
+    "TS_TTL1-8-TTL-3",
+    "TIFilterBlock1-ExtraDelayMs",
+    "Wheel-A-Label",
+    "TS_TTL1-8-TTL-4",
+    "HamamatsuHam-EXPOSURE FULL RANGE",
+    "TIPFSOffset-RelockTimeoutMs",
+    "TS_TTL1-8-TTL-5",
+    "HamamatsuHam-ReadoutTime",
+    "Wheel-A-Busy",
+    "Magnifier-Position",
+    "TS_TTL1-8-TTL-6",
+    "TIFilterBlock1-Label",
+    "TIXYDrive-TransposeMirrorX",
+    "HamamatsuHam-Name",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS",
+    "Core-TimeoutMs",
+    "TS_TTL1-8-TTL-7",
+    "FluorescenceShutter-Name",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[2]",
+    "TIXYDrive-TransposeMirrorY",
+    "TICondenserCassette-Name",
+    "HamamatsuHam-DEFECT CORRECT MODE",
+    "TS_TTL1-8-TTL-8",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[1]",
+    "COM4-Handshaking",
+    "HamamatsuHam-TriggerPolarity",
+    "HamamatsuHam-SENSOR MODE",
+    "COM5-Handshaking",
+    "TIPFSOffset-Position",
+    "HamamatsuHam-BUFFER TOP OFFSET BYTES",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[0]",
+    "Magnifier-High Position Magnification",
+    "Core-AutoFocus",
+    "TriggerScopeMM-Hub-Firmware Version",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[2]",
+    "HamamatsuHam-INTERNAL LINE INTERVAL",
+    "HamamatsuHam-IMAGE TOP OFFSET BYTES",
+    "HamamatsuHam-TRIGGER ACTIVE",
+    "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT",
+    "TriggerScopeMM-Hub-UseActionLEDs",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]",
+    "Core-Galvo",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[1]",
+    "TIAnalyzer-Name",
+    "TIPFSOffset-Name",
+    "Wheel-A-Timeout(ms)",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]",
+    "Wheel-A-Description",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[0]",
+    "TIPFSStatus-State",
+    "Core-Initialize",
+    "TS_TTL1-8-Sequence",
+    "HamamatsuHam-CameraName",
+    "TIPFSStatus-Name",
+    "TIZDrive-Speed",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]",
+    "Wheel-A-Port",
+    "HamamatsuHam-INTERNAL LINE SPEED UNITS",
+    "Core-Shutter"
+  ],
+  "UserData": {},
+  "FileName": "3Channel_Raw_25Pos_1_MMStack_Pos-1-001_001.ome.tif"
+},
+"FrameKey-0-2-0": {
+  "UUID": "78676e82-8628-4dd7-acfc-a210af4e1c58",
+  "Camera": "HamamatsuHam",
+  "Binning": 1,
+  "ROI": "0-0-2048-2048",
+  "BitDepth": 16,
+  "Exposure-ms": 99.99663157894736,
+  "ElapsedTime-ms": 25481.0,
+  "ReceivedTime": "2026-10-16 09:39:16.869 -0700",
+  "PixelSizeUm": 0.3238,
+  "PixelSizeAffine": "-0.3239979811076061;6.187140617613031E-4;6.187140617613031E-4;-7.330948792043812E-4;-0.32369706791816655;0.0",
+  "PositionName": "Pos-1-001_001",
+  "XPositionUm": 662.1807389084,
+  "YPositionUm": 1562.4329867902584,
+  "ZPositionUm": 4266.000063568354,
+  "TINosePiece-ExtraDelayMs": "0.0000",
+  "TILightPath-ExtraDelayMs": "0.0000",
+  "Wheel-A-Delay_ms": "0.0000",
+  "TriggerScopeMM-Hub-Serial Receive": "",
+  "TIZDrive-ExtraDelayMs": "0.0000",
+  "Magnifier-HubID": "",
+  "COM5-StopBits": "1",
+  "HamamatsuHam-RECORD FIXED BYTES PER FILE": "256",
+  "COM4-Description": "Serial port driver (boost:asio)",
+  "COM4-StopBits": "1",
+  "TIScope-DriverVersion": "Unknown",
+  "TIPFSStatus-FullFocusWaitAfterLockMs": "0.0000",
+  "TICondenserCassette-State": "0",
+  "TIScope-SoftwareVersion": "4.4.1.751",
+  "COM5-Description": "Serial port driver (boost:asio)",
+  "HamamatsuHam-BUFFER ROWBYTES": "4096",
+  "COM5-Name": "COM5",
+  "TIXYDrive-Name": "TIXYDrive",
+  "TIXYDrive-ToleranceX": "5",
+  "COM4-DelayBetweenCharsMs": "0.0000",
+  "HamamatsuHam-CONVERSION FACTOR COEFF": "0.4900",
+  "TIZDrive-Tolerance": "1",
+  "TIPFSStatus-Status": "Locked in focus",
+  "COM5-DelayBetweenCharsMs": "0.0000",
+  "COM4-Name": "COM4",
+  "Core-ImageProcessor": "",
+  "TICondenserCassette-Label": "1-A",
+  "TIXYDrive-ToleranceY": "5",
+  "HamamatsuHam-BUFFER PIXEL TYPE": "MONO16",
+  "COM5-Parity": "None",
+  "Magnifier-Freely variable or fixed magnification": "Fixed",
+  "Core-SLM": "",
+  "COM4-Parity": "None",
+  "HamamatsuHam-EXPOSURE TIME UNITS": "MILLISECONDS",
+  "TIFilterBlock1-Name": "TIFilterBlock1",
+  "TS_TTL1-8-Sequence Trigger Edge": "Rising",
+  "COM5-BaudRate": "115200",
+  "TriggerScopeMM-Hub-Software Version": "v1.0-MM, 8/24/2020",
+  "COM4-Verbose": "1",
+  "HamamatsuHam-CONVERSION FACTOR OFFSET": "100.0000",
+  "TIEpiShutter-State": "0",
+  "COM4-BaudRate": "128000",
+  "TS_TTL1-8-Blank On": "Low",
+  "HamamatsuHam-RECORD FIXED BYTES PER FRAME": "8388672",
+  "TICondenserCassette-ExtraDelayMs": "0.0000",
+  "COM4-DTR": "Disable",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS": "SECONDS",
+  "TriggerScopeMM-Hub-COM Port": "COM5",
+  "COM4-AnswerTimeout": "500.0000",
+  "COM5-DataBits": "8",
+  "Wheel-A-Speed": "3",
+  "COM5-DTR": "Disable",
+  "HamamatsuHam-TransposeCorrection": "0",
+  "Wheel-A-Name": "Wheel-A",
+  "TriggerScopeMM-Hub-DAC Bits": "16",
+  "COM5-Verbose": "1",
+  "HamamatsuHam-READOUT DIRECTION": "DIVERGE",
+  "TIDiaShutter-State": "0",
+  "COM5-AnswerTimeout": "500.0000",
+  "TIAnalyzer-Inserted": "Extracted",
+  "HamamatsuHam-Trigger": "NORMAL",
+  "Core-Focus": "TIZDrive",
+  "COM4-DataBits": "8",
+  "TIXYDrive-SpeedX": "5",
+  "Core-ChannelGroup": "Channel",
+  "TriggerScopeMM-Hub-Port": "COM5",
+  "TILightPath-State": "2",
+  "HamamatsuHam-SYSTEM ALIVE": "ONLINE",
+  "TINosePiece-State": "1",
+  "HamamatsuHam-INTERNAL LINE INTERVAL UNITS": "MILLISECONDS",
+  "TS_TTL1-8-Blanking": "Off",
+  "TIXYDrive-SpeedY": "5",
+  "HamamatsuHam-Camera Version": "2.50.A",
+  "TriggerScopeMM-Hub-Serial Send": "",
+  "TIPFSOffset-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-TransposeXY": "0",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]": "0.0010",
+  "HamamatsuHam-Binning": "1x1",
+  "TILightPath-Label": "3-Right100",
+  "TINosePiece-Label": "2-Plan Apo VC 20x NA 0.75 Dry",
+  "HamamatsuHam-TRIGGER DELAY": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]": "0.0010",
+  "TIScope-DeviceIndex": "1",
+  "FluorescenceShutter-Description": "State device that is used as a shutter",
+  "HamamatsuHam-TransposeMirrorX": "0",
+  "HamamatsuHam-ScanMode": "2",
+  "HamamatsuHam-TRIGGER GLOBAL EXPOSURE": "DELAYED",
+  "HamamatsuHam-Description": "Hamamatsu device adapter 2.2.1.71",
+  "HamamatsuHam-CameraID": "S/N: 781113",
+  "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT": "60000",
+  "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]": "0.0010",
+  "HamamatsuHam-TransposeMirrorY": "0",
+  "Core-XYStage": "TIXYDrive",
+  "TIScope-FirmwareVersion": "Ti-E V5.50",
+  "TIScope-DeviceAddress": "USB_DEVICE(1)",
+  "HamamatsuHam-TRIGGER TIMES": "1",
+  "HamamatsuHam-FRAME STAMP PRODUCER": "DCAM MODULE",
+  "Core-AutoShutter": "1",
+  "HamamatsuHam-INTERNAL LINE SPEED": "0.6671",
+  "HamamatsuHam-BUFFER FRAMEBYTES": "8388608",
+  "HamamatsuHam-TRIGGER SOURCE": "INTERNAL",
+  "TIPFSStatus-FullFocusTimeoutMs": "5000.0000",
+  "HamamatsuHam-RECORD FIXED BYTES PER SESSION": "800",
+  "TINosePiece-Name": "TINosePiece",
+  "TILightPath-Name": "TILightPath",
+  "TIZDrive-Tolerance_um": "0.0250",
+  "HamamatsuHam-PixelType": "16bit",
+  "COM5-Fast USB to Serial": "Disable",
+  "TIXYDrive-ToleranceY_um": "0.5000",
+  "TIXYDrive-ExtraDelayMs": "0.0000",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]": "READOUT END",
+  "TIDiaShutter-Name": "TIDiaShutter",
+  "COM4-Fast USB to Serial": "Disable",
+  "Core-Camera": "HamamatsuHam",
+  "TriggerScopeMM-Hub-Description": "TriggerScope",
+  "TIXYDrive-ToleranceX_um": "0.5000",
+  "Wheel-A-ClosedPosition": "",
+  "TS_TTL1-8-TTL-1": "0",
+  "HamamatsuHam-Camera Bus": "AS-FBD-1XCLD-2PE8",
+  "FluorescenceShutter-State Device": "TS_TTL1-8",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]": "READOUT END",
+  "Wheel-A-State": "2",
+  "TIZDrive-Name": "TIZDrive",
+  "TriggerScopeMM-Hub-Name": "TriggerScopeMM-Hub",
+  "HamamatsuHam-TIME STAMP PRODUCER": "DCAM MODULE",
+  "TIEpiShutter-Name": "TIEpiShutter",
+  "HamamatsuHam-Bits per Channel": "16",
+  "TS_TTL1-8-State": "64",
+  "TS_TTL1-8-TTL-2": "0",
+  "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]": "VSYNC",
+  "HamamatsuHam-Exposure": "100.00",
+  "TIFilterBlock1-State": "0",
+  "TS_TTL1-8-TTL-3": "0",
+  "TIFilterBlock1-ExtraDelayMs": "0.0000",
+  "Wheel-A-Label": "DAPI",
+  "TS_TTL1-8-TTL-4": "0",
+  "HamamatsuHam-EXPOSURE FULL RANGE": "DISABLE",
+  "TIPFSOffset-RelockTimeoutMs": "3000.0000",
+  "TS_TTL1-8-TTL-5": "0",
+  "HamamatsuHam-ReadoutTime": "0.0100",
+  "Wheel-A-Busy": "0",
+  "Magnifier-Position": "1x",
+  "TS_TTL1-8-TTL-6": "0",
+  "TIFilterBlock1-Label": "1-SedatQuad",
+  "TIXYDrive-TransposeMirrorX": "1",
+  "HamamatsuHam-Name": "HamamatsuHam_DCAM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS": "SECONDS",
+  "Core-TimeoutMs": "5000",
+  "TS_TTL1-8-TTL-7": "1",
+  "FluorescenceShutter-Name": "State Device Shutter",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[2]": "TRIGGER READY",
+  "TIXYDrive-TransposeMirrorY": "0",
+  "TICondenserCassette-Name": "TICondenserCassette",
+  "HamamatsuHam-DEFECT CORRECT MODE": "ON",
+  "TS_TTL1-8-TTL-8": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[1]": "TRIGGER READY",
+  "COM4-Handshaking": "Off",
+  "HamamatsuHam-TriggerPolarity": "NEGATIVE",
+  "HamamatsuHam-SENSOR MODE": "AREA",
+  "COM5-Handshaking": "Off",
+  "TIPFSOffset-Position": "166.6000",
+  "HamamatsuHam-BUFFER TOP OFFSET BYTES": "0",
+  "HamamatsuHam-OUTPUT TRIGGER KIND[0]": "EXPOSURE",
+  "Magnifier-High Position Magnification": "1.5000",
+  "Core-AutoFocus": "TIPFSStatus",
+  "TriggerScopeMM-Hub-Firmware Version": "ARC TRIGGERSCOPE 16 R3C v.605-MM",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[2]": "0.0000",
+  "HamamatsuHam-INTERNAL LINE INTERVAL": "0.0097",
+  "HamamatsuHam-IMAGE TOP OFFSET BYTES": "0",
+  "HamamatsuHam-TRIGGER ACTIVE": "EDGE",
+  "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT": "0",
+  "TriggerScopeMM-Hub-UseActionLEDs": "On",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]": "NEGATIVE",
+  "Core-Galvo": "",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[1]": "0.0000",
+  "TIAnalyzer-Name": "TIAnalyzer",
+  "TIPFSOffset-Name": "TIPFSOffset",
+  "Wheel-A-Timeout(ms)": "500",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]": "NEGATIVE",
+  "Wheel-A-Description": "Sutter Lambda filter wheel adapter",
+  "HamamatsuHam-OUTPUT TRIGGER DELAY[0]": "0.0000",
+  "TIPFSStatus-State": "On",
+  "Core-Initialize": "1",
+  "TS_TTL1-8-Sequence": "On",
+  "HamamatsuHam-CameraName": "C11440-22C",
+  "TIPFSStatus-Name": "TIPFSStatus",
+  "TIZDrive-Speed": "1",
+  "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]": "POSITIVE",
+  "Wheel-A-Port": "COM4",
+  "HamamatsuHam-INTERNAL LINE SPEED UNITS": "METERS PER SECOND",
+  "Core-Shutter": "FluorescenceShutter",
+  "ScopeDataKeys": [
+    "TINosePiece-ExtraDelayMs",
+    "TILightPath-ExtraDelayMs",
+    "Wheel-A-Delay_ms",
+    "TriggerScopeMM-Hub-Serial Receive",
+    "TIZDrive-ExtraDelayMs",
+    "Magnifier-HubID",
+    "COM5-StopBits",
+    "HamamatsuHam-RECORD FIXED BYTES PER FILE",
+    "COM4-Description",
+    "COM4-StopBits",
+    "TIScope-DriverVersion",
+    "TIPFSStatus-FullFocusWaitAfterLockMs",
+    "TICondenserCassette-State",
+    "TIScope-SoftwareVersion",
+    "COM5-Description",
+    "HamamatsuHam-BUFFER ROWBYTES",
+    "COM5-Name",
+    "TIXYDrive-Name",
+    "TIXYDrive-ToleranceX",
+    "COM4-DelayBetweenCharsMs",
+    "HamamatsuHam-CONVERSION FACTOR COEFF",
+    "TIZDrive-Tolerance",
+    "TIPFSStatus-Status",
+    "COM5-DelayBetweenCharsMs",
+    "COM4-Name",
+    "Core-ImageProcessor",
+    "TICondenserCassette-Label",
+    "TIXYDrive-ToleranceY",
+    "HamamatsuHam-BUFFER PIXEL TYPE",
+    "COM5-Parity",
+    "Magnifier-Freely variable or fixed magnification",
+    "Core-SLM",
+    "COM4-Parity",
+    "HamamatsuHam-EXPOSURE TIME UNITS",
+    "TIFilterBlock1-Name",
+    "TS_TTL1-8-Sequence Trigger Edge",
+    "COM5-BaudRate",
+    "TriggerScopeMM-Hub-Software Version",
+    "COM4-Verbose",
+    "HamamatsuHam-CONVERSION FACTOR OFFSET",
+    "TIEpiShutter-State",
+    "COM4-BaudRate",
+    "TS_TTL1-8-Blank On",
+    "HamamatsuHam-RECORD FIXED BYTES PER FRAME",
+    "TICondenserCassette-ExtraDelayMs",
+    "COM4-DTR",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD UNITS",
+    "TriggerScopeMM-Hub-COM Port",
+    "COM4-AnswerTimeout",
+    "COM5-DataBits",
+    "Wheel-A-Speed",
+    "COM5-DTR",
+    "HamamatsuHam-TransposeCorrection",
+    "Wheel-A-Name",
+    "TriggerScopeMM-Hub-DAC Bits",
+    "COM5-Verbose",
+    "HamamatsuHam-READOUT DIRECTION",
+    "TIDiaShutter-State",
+    "COM5-AnswerTimeout",
+    "TIAnalyzer-Inserted",
+    "HamamatsuHam-Trigger",
+    "Core-Focus",
+    "COM4-DataBits",
+    "TIXYDrive-SpeedX",
+    "Core-ChannelGroup",
+    "TriggerScopeMM-Hub-Port",
+    "TILightPath-State",
+    "HamamatsuHam-SYSTEM ALIVE",
+    "TINosePiece-State",
+    "HamamatsuHam-INTERNAL LINE INTERVAL UNITS",
+    "TS_TTL1-8-Blanking",
+    "TIXYDrive-SpeedY",
+    "HamamatsuHam-Camera Version",
+    "TriggerScopeMM-Hub-Serial Send",
+    "TIPFSOffset-ExtraDelayMs",
+    "HamamatsuHam-TransposeXY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[2]",
+    "HamamatsuHam-Binning",
+    "TILightPath-Label",
+    "TINosePiece-Label",
+    "HamamatsuHam-TRIGGER DELAY",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[1]",
+    "TIScope-DeviceIndex",
+    "FluorescenceShutter-Description",
+    "HamamatsuHam-TransposeMirrorX",
+    "HamamatsuHam-ScanMode",
+    "HamamatsuHam-TRIGGER GLOBAL EXPOSURE",
+    "HamamatsuHam-Description",
+    "HamamatsuHam-CameraID",
+    "HamamatsuHam-MINIMUM ACQUISITION TIMEOUT",
+    "HamamatsuHam-OUTPUT TRIGGER PERIOD[0]",
+    "HamamatsuHam-TransposeMirrorY",
+    "Core-XYStage",
+    "TIScope-FirmwareVersion",
+    "TIScope-DeviceAddress",
+    "HamamatsuHam-TRIGGER TIMES",
+    "HamamatsuHam-FRAME STAMP PRODUCER",
+    "Core-AutoShutter",
+    "HamamatsuHam-INTERNAL LINE SPEED",
+    "HamamatsuHam-BUFFER FRAMEBYTES",
+    "HamamatsuHam-TRIGGER SOURCE",
+    "TIPFSStatus-FullFocusTimeoutMs",
+    "HamamatsuHam-RECORD FIXED BYTES PER SESSION",
+    "TINosePiece-Name",
+    "TILightPath-Name",
+    "TIZDrive-Tolerance_um",
+    "HamamatsuHam-PixelType",
+    "COM5-Fast USB to Serial",
+    "TIXYDrive-ToleranceY_um",
+    "TIXYDrive-ExtraDelayMs",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[2]",
+    "TIDiaShutter-Name",
+    "COM4-Fast USB to Serial",
+    "Core-Camera",
+    "TriggerScopeMM-Hub-Description",
+    "TIXYDrive-ToleranceX_um",
+    "Wheel-A-ClosedPosition",
+    "TS_TTL1-8-TTL-1",
+    "HamamatsuHam-Camera Bus",
+    "FluorescenceShutter-State Device",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[1]",
+    "Wheel-A-State",
+    "TIZDrive-Name",
+    "TriggerScopeMM-Hub-Name",
+    "HamamatsuHam-TIME STAMP PRODUCER",
+    "TIEpiShutter-Name",
+    "HamamatsuHam-Bits per Channel",
+    "TS_TTL1-8-State",
+    "TS_TTL1-8-TTL-2",
+    "HamamatsuHam-OUTPUT TRIGGER SOURCE[0]",
+    "HamamatsuHam-Exposure",
+    "TIFilterBlock1-State",
+    "TS_TTL1-8-TTL-3",
+    "TIFilterBlock1-ExtraDelayMs",
+    "Wheel-A-Label",
+    "TS_TTL1-8-TTL-4",
+    "HamamatsuHam-EXPOSURE FULL RANGE",
+    "TIPFSOffset-RelockTimeoutMs",
+    "TS_TTL1-8-TTL-5",
+    "HamamatsuHam-ReadoutTime",
+    "Wheel-A-Busy",
+    "Magnifier-Position",
+    "TS_TTL1-8-TTL-6",
+    "TIFilterBlock1-Label",
+    "TIXYDrive-TransposeMirrorX",
+    "HamamatsuHam-Name",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY UNITS",
+    "Core-TimeoutMs",
+    "TS_TTL1-8-TTL-7",
+    "FluorescenceShutter-Name",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[2]",
+    "TIXYDrive-TransposeMirrorY",
+    "TICondenserCassette-Name",
+    "HamamatsuHam-DEFECT CORRECT MODE",
+    "TS_TTL1-8-TTL-8",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[1]",
+    "COM4-Handshaking",
+    "HamamatsuHam-TriggerPolarity",
+    "HamamatsuHam-SENSOR MODE",
+    "COM5-Handshaking",
+    "TIPFSOffset-Position",
+    "HamamatsuHam-BUFFER TOP OFFSET BYTES",
+    "HamamatsuHam-OUTPUT TRIGGER KIND[0]",
+    "Magnifier-High Position Magnification",
+    "Core-AutoFocus",
+    "TriggerScopeMM-Hub-Firmware Version",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[2]",
+    "HamamatsuHam-INTERNAL LINE INTERVAL",
+    "HamamatsuHam-IMAGE TOP OFFSET BYTES",
+    "HamamatsuHam-TRIGGER ACTIVE",
+    "HamamatsuHam-OUTPUT TRIGGER PRE HSYNC COUNT",
+    "TriggerScopeMM-Hub-UseActionLEDs",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[2]",
+    "Core-Galvo",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[1]",
+    "TIAnalyzer-Name",
+    "TIPFSOffset-Name",
+    "Wheel-A-Timeout(ms)",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[1]",
+    "Wheel-A-Description",
+    "HamamatsuHam-OUTPUT TRIGGER DELAY[0]",
+    "TIPFSStatus-State",
+    "Core-Initialize",
+    "TS_TTL1-8-Sequence",
+    "HamamatsuHam-CameraName",
+    "TIPFSStatus-Name",
+    "TIZDrive-Speed",
+    "HamamatsuHam-OUTPUT TRIGGER POLARITY[0]",
+    "Wheel-A-Port",
+    "HamamatsuHam-INTERNAL LINE SPEED UNITS",
+    "Core-Shutter"
+  ],
+  "UserData": {},
+  "FileName": "3Channel_Raw_25Pos_1_MMStack_Pos-1-001_001.ome.tif"
+}
+}
