@@ -12,3 +12,7 @@ uv.lock
 # Large image files (>15MB) from Box for Sessions 6 and 7
 BPAE_100x_ZStack_3Crop/BPAE_100x_ZStack_3_MMStack_Pos0.ome.tif
 3Channel_Raw_25Pos_1/*.ome.tif
+3Channel_Raw_25Pos_1/flatfield_cellpose/corrected/
+
+# Python bytecode caches
+__pycache__/
